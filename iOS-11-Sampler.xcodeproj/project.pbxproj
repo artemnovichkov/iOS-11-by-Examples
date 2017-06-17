@@ -28,6 +28,7 @@
 		06B51C891EF5454000CA9279 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		06B51C8C1EF547C600CA9279 /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
 		06B51C8E1EF547D400CA9279 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		06B51C901EF5492800CA9279 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		06B51C6B1EF543DD00CA9279 = {
 			isa = PBXGroup;
 			children = (
+				06B51C901EF5492800CA9279 /* README.md */,
 				06B51C761EF543DD00CA9279 /* iOS-11-Sampler */,
 				06B51C751EF543DD00CA9279 /* Products */,
 			);

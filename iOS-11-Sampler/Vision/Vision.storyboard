@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +20,38 @@
                     <view key="view" contentMode="scaleToFill" id="RMV-t5-2ee">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ws-Lu-zv4">
+                                <rect key="frame" x="145" y="617" width="85" height="30"/>
+                                <state key="normal" title="Take a selfie"/>
+                                <connections>
+                                    <action selector="photoButtonAction:" destination="H8L-Pr-BK6" eventType="touchUpInside" id="z3o-9f-dF0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xi2-jb-BC7">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xi2-jb-BC7" secondAttribute="height" multiplier="1:1" id="e0e-yk-oka"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CP8-xq-2By" firstAttribute="top" secondItem="6ws-Lu-zv4" secondAttribute="bottom" constant="20" id="LWU-79-YpR"/>
+                            <constraint firstItem="Xi2-jb-BC7" firstAttribute="centerY" secondItem="RMV-t5-2ee" secondAttribute="centerY" id="RhJ-U0-4Ut"/>
+                            <constraint firstItem="Xi2-jb-BC7" firstAttribute="leading" secondItem="RMV-t5-2ee" secondAttribute="leading" id="X3e-TI-Idp"/>
+                            <constraint firstAttribute="trailing" secondItem="Xi2-jb-BC7" secondAttribute="trailing" id="hkP-DC-DvG"/>
+                            <constraint firstItem="6ws-Lu-zv4" firstAttribute="centerX" secondItem="RMV-t5-2ee" secondAttribute="centerX" id="uzy-fl-IUY"/>
+                        </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="Xi2-jb-BC7" id="Pkj-p5-mfy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nm7-jh-lIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112" y="-96"/>
+            <point key="canvasLocation" x="-112.8" y="-96.7016491754123"/>
         </scene>
     </scenes>
 </document>
