@@ -8,18 +8,40 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    
+    var dataSource = DataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: UITableViewDataSource
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.samples.count
     }
-
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "Cell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        
+        let sample = dataSource.samples[indexPath.row]
+        cell.textLabel?.text = sample.title
+        cell.detailTextLabel?.text = sample.description
+        
+        return cell
+    }
+    
+    // MARK: UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sample = dataSource.samples[indexPath.row]
+        if let controller = sample.controller {
+            navigationController?.pushViewController(controller, animated: true)
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
