@@ -15,6 +15,9 @@
 		06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C891EF5454000CA9279 /* DataSource.swift */; };
 		06B51C8D1EF547C600CA9279 /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C8C1EF547C600CA9279 /* Vision.storyboard */; };
 		06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C8E1EF547D400CA9279 /* VisionViewController.swift */; };
+		06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C921EF5596F00CA9279 /* CoreML.storyboard */; };
+		06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C941EF5597900CA9279 /* CoreMLViewController.swift */; };
+		06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		06B51C8C1EF547C600CA9279 /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
 		06B51C8E1EF547D400CA9279 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		06B51C901EF5492800CA9279 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		06B51C921EF5596F00CA9279 /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
+		06B51C941EF5597900CA9279 /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
+		06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-Sampler */ = {
 			isa = PBXGroup;
 			children = (
+				06B51C911EF5593300CA9279 /* CoreML */,
 				06B51C8B1EF547B700CA9279 /* Vision */,
 				06B51C771EF543DD00CA9279 /* AppDelegate.swift */,
 				06B51C791EF543DD00CA9279 /* ViewController.swift */,
@@ -81,6 +88,16 @@
 				06B51C8E1EF547D400CA9279 /* VisionViewController.swift */,
 			);
 			path = Vision;
+			sourceTree = "<group>";
+		};
+		06B51C911EF5593300CA9279 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */,
+				06B51C921EF5596F00CA9279 /* CoreML.storyboard */,
+				06B51C941EF5597900CA9279 /* CoreMLViewController.swift */,
+			);
+			path = CoreML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +160,7 @@
 			files = (
 				06B51C8D1EF547C600CA9279 /* Vision.storyboard in Resources */,
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
+				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
 				06B51C7F1EF543DD00CA9279 /* Assets.xcassets in Resources */,
 				06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */,
 			);
@@ -156,9 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
+				06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,
+				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,9 +17,9 @@ class VisionViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func start(with image: UIImage) {
+    func process(_ image: UIImage) {
         imageView.image = image
-        guard let ciImage = CIImage(image: image) else {
+        guard let ciImage = image.ciImage else {
             return
         }
         let request = VNDetectFaceRectanglesRequest { [unowned self] request, error in
@@ -27,7 +27,7 @@ class VisionViewController: UIViewController {
                 print(error)
             }
             else {
-                self.handleFaces(request: request)
+                self.handleFaces(with: request)
             }
         }
         let handler = VNImageRequestHandler(ciImage: ciImage, options: [:])
@@ -39,7 +39,7 @@ class VisionViewController: UIViewController {
         }
     }
     
-    func handleFaces(request: VNRequest) {
+    func handleFaces(with request: VNRequest) {
         imageView.layer.sublayers?.forEach { layer in
             layer.removeFromSuperlayer()
         }
@@ -65,24 +65,24 @@ class VisionViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func photoButtonAction(_ sender: Any) {
-        let vc = UIImagePickerController()
+        let imagePickerController = UIImagePickerController()
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            vc.sourceType = .camera
+            imagePickerController.sourceType = .camera
         }
-        vc.delegate = self
-        vc.allowsEditing = true
-        present(vc, animated: true, completion: nil)
+        imagePickerController.delegate = self
+        imagePickerController.allowsEditing = true
+        present(imagePickerController, animated: true, completion: nil)
     }
 }
 
 extension VisionViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        picker.dismiss(animated: true, completion: nil)
         guard let image = info[UIImagePickerControllerEditedImage] as? UIImage else {
             return
         }
-        start(with: image)
+        process(image)
+        picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

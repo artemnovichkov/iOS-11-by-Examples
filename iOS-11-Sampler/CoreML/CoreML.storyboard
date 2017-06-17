@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="apJ-hm-0ms">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CoreML View Controller-->
+        <scene sceneID="BS2-eL-m2m">
+            <objects>
+                <viewController id="apJ-hm-0ms" customClass="CoreMLViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WXR-xM-VSe"/>
+                        <viewControllerLayoutGuide type="bottom" id="3fV-cZ-4BW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="B6F-Ji-ng8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uix-Zd-8CD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uix-Zd-8CD" secondAttribute="height" multiplier="1:1" id="GIX-6Y-4jV"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya5-8h-f2b">
+                                <rect key="frame" x="143" y="403" width="88" height="30"/>
+                                <state key="normal" title="Take a photo"/>
+                                <connections>
+                                    <action selector="buttonAction:" destination="apJ-hm-0ms" eventType="touchUpInside" id="sM2-4y-qA9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTI-NP-1j8">
+                                <rect key="frame" x="187" y="441" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HTI-NP-1j8" firstAttribute="centerX" secondItem="B6F-Ji-ng8" secondAttribute="centerX" id="8hE-V5-kdi"/>
+                            <constraint firstItem="Uix-Zd-8CD" firstAttribute="top" secondItem="WXR-xM-VSe" secondAttribute="bottom" id="AaP-iP-ikv"/>
+                            <constraint firstItem="Ya5-8h-f2b" firstAttribute="centerX" secondItem="B6F-Ji-ng8" secondAttribute="centerX" id="RbP-0n-6Jy"/>
+                            <constraint firstItem="Ya5-8h-f2b" firstAttribute="top" secondItem="Uix-Zd-8CD" secondAttribute="bottom" constant="8" id="Tlg-yq-0Bs"/>
+                            <constraint firstItem="Uix-Zd-8CD" firstAttribute="leading" secondItem="B6F-Ji-ng8" secondAttribute="leading" id="c9T-6y-vT9"/>
+                            <constraint firstItem="HTI-NP-1j8" firstAttribute="top" secondItem="Ya5-8h-f2b" secondAttribute="bottom" constant="8" id="dZY-jV-dgg"/>
+                            <constraint firstAttribute="trailing" secondItem="Uix-Zd-8CD" secondAttribute="trailing" id="vt2-Ix-slR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Uix-Zd-8CD" id="JLB-8b-O4L"/>
+                        <outlet property="label" destination="HTI-NP-1j8" id="JgC-hz-s5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eT-od-Rny" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+</document>
