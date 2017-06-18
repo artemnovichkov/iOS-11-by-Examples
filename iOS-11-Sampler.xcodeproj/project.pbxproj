@@ -24,6 +24,8 @@
 		06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */; };
 		06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */; };
 		06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */; };
+		06F9D6201EF6758200E0A4FB /* DeviceCheck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D61E1EF674EC00E0A4FB /* DeviceCheck.storyboard */; };
+		06F9D6211EF6758500E0A4FB /* DeviceCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D61F1EF674EC00E0A4FB /* DeviceCheckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreNFC.storyboard; sourceTree = "<group>"; };
 		06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNFCViewController.swift; sourceTree = "<group>"; };
+		06F9D61E1EF674EC00E0A4FB /* DeviceCheck.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceCheck.storyboard; sourceTree = "<group>"; };
+		06F9D61F1EF674EC00E0A4FB /* DeviceCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCheckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-Sampler */ = {
 			isa = PBXGroup;
 			children = (
+				06F9D61D1EF674EC00E0A4FB /* DeviceCheck */,
 				06ED736B1EF65BFC0060456F /* CoreNFC */,
 				060519651EF63CDC00EF8CC6 /* IdentityLookup */,
 				060519641EF63CC000EF8CC6 /* iOS-11-Sampler.entitlements */,
@@ -177,6 +182,15 @@
 				06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */,
 			);
 			path = CoreNFC;
+			sourceTree = "<group>";
+		};
+		06F9D61D1EF674EC00E0A4FB /* DeviceCheck */ = {
+			isa = PBXGroup;
+			children = (
+				06F9D61E1EF674EC00E0A4FB /* DeviceCheck.storyboard */,
+				06F9D61F1EF674EC00E0A4FB /* DeviceCheckViewController.swift */,
+			);
+			path = DeviceCheck;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F9D6201EF6758200E0A4FB /* DeviceCheck.storyboard in Resources */,
 				06B51C8D1EF547C600CA9279 /* Vision.storyboard in Resources */,
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
@@ -305,6 +320,7 @@
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
 				06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
+				06F9D6211EF6758500E0A4FB /* DeviceCheckViewController.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,
 				06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */,

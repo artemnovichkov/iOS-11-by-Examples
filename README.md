@@ -18,10 +18,14 @@ Image classification demo using Core ML framework. Show description of an object
 
 ### IdentityLookup
 
-SMS and MMS fultering using IdentityLookup framework. Don't forget to turn on an extension in Messages > Unknown & Spam > SMS filetering
+SMS and MMS filtering using IdentityLookup framework. Don't forget to turn on an extension in Messages > Unknown & Spam > SMS filtering
 
 <img src="resources/identity-lookup-example.jpeg" width="200">
 
 ### Core NFC
 
 Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site
+
+### DeviceCheck
+
+Identifying devices that have already taken advantage of a promotional offer that you provide, or flagging a device that you have determined to be fraudulent.
