@@ -22,10 +22,10 @@ struct Sample {
 }
 
 struct DataSource {
-    lazy var samples = [Sample(title: "Core ML", description: "Core ML description", storyboardName: "CoreML"),
-                        Sample(title: "Vision", description: "Vision description", storyboardName: "Vision"),
-                        Sample(title: "ARKit", description: "Augmented reality experiences in your app or game", storyboardName: "ARKit"),
-                        Sample(title: "Core NFC", description: "Reading of NFC tags", storyboardName: "CoreNFC"),
-                        Sample(title: "IdentityLookup", description: "Filter unwanted SMS and MMS messages", storyboardName: "IdentityLookup"),
-                        Sample(title: "DeviceCheck", description: "Access per-device, per-developer data that your associated server can use in its business logic.", storyboardName: "DeviceCheck")]
+    lazy var samples = [Sample(title: "🤖 Core ML", description: "Object classification using Core ML framework", storyboardName: "CoreML"),
+                        Sample(title: "👀 Vision", description: "Face detection using Vision framework", storyboardName: "Vision"),
+                        Sample(title: "🚀 ARKit", description: "Augmented reality experiences in your app or game", storyboardName: "ARKit"),
+                        Sample(title: "🔖 Core NFC", description: "Reading of NFC tags", storyboardName: "CoreNFC"),
+                        Sample(title: "✉️ IdentityLookup", description: "Filter unwanted SMS and MMS messages", storyboardName: "IdentityLookup"),
+                        Sample(title: "📱 DeviceCheck", description: "Generating unique per-device or per-user identifier", storyboardName: "DeviceCheck")]
 }

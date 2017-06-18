@@ -39,7 +39,9 @@ extension UIImage {
         
         let cfnumPointer = UnsafeMutablePointer<UnsafeRawPointer>.allocate(capacity: 1)
         let cfnum = CFNumberCreate(kCFAllocatorDefault, .intType, cfnumPointer)
-        let keys: [CFString] = [kCVPixelBufferCGImageCompatibilityKey, kCVPixelBufferCGBitmapContextCompatibilityKey, kCVPixelBufferBytesPerRowAlignmentKey]
+        let keys: [CFString] = [kCVPixelBufferCGImageCompatibilityKey,
+                                kCVPixelBufferCGBitmapContextCompatibilityKey,
+                                kCVPixelBufferBytesPerRowAlignmentKey]
         let values: [CFTypeRef] = [kCFBooleanTrue, kCFBooleanTrue, cfnum!]
         let keysPointer = UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 1)
         let valuesPointer =  UnsafeMutablePointer<UnsafeRawPointer?>.allocate(capacity: 1)
@@ -52,8 +54,12 @@ extension UIImage {
         let height = cgImage.height
         
         var pxbuffer: CVPixelBuffer?
-        var status = CVPixelBufferCreate(kCFAllocatorDefault, width, height,
-                                         kCVPixelFormatType_32BGRA, options, &pxbuffer)
+        var status = CVPixelBufferCreate(kCFAllocatorDefault,
+                                         width,
+                                         height,
+                                         kCVPixelFormatType_32BGRA,
+                                         options,
+                                         &pxbuffer)
         status = CVPixelBufferLockBaseAddress(pxbuffer!, CVPixelBufferLockFlags(rawValue: 0))
         
         let bufferAddress = CVPixelBufferGetBaseAddress(pxbuffer!)

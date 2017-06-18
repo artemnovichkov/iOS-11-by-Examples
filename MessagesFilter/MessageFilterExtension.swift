@@ -12,22 +12,21 @@ final class MessageFilterExtension: ILMessageFilterExtension {}
 
 extension MessageFilterExtension: ILMessageFilterQueryHandling {
     
-    func handle(_ queryRequest: ILMessageFilterQueryRequest, context: ILMessageFilterExtensionContext, completion: @escaping (ILMessageFilterQueryResponse) -> Void) {
+    func handle(_ queryRequest: ILMessageFilterQueryRequest,
+                context: ILMessageFilterExtensionContext,
+                completion: @escaping (ILMessageFilterQueryResponse) -> Void) {
         // First, check whether to filter using offline data (if possible).
         let offlineAction = self.offlineAction(for: queryRequest)
         
         switch offlineAction {
         case .allow, .filter:
-            // Based on offline data, we know this message should either be Allowed or Filtered. Send response immediately.
             let response = ILMessageFilterQueryResponse()
             response.action = offlineAction
             
             completion(response)
             
         case .none:
-            // Based on offline data, we do not know whether this message should be Allowed or Filtered. Defer to network.
-            // Note: Deferring requests to network requires the extension target's Info.plist to contain a key with a URL to use. See documentation for details.
-            context.deferQueryRequestToNetwork() { networkResponse, error in
+            context.deferQueryRequestToNetwork { networkResponse, error in
                 let response = ILMessageFilterQueryResponse()
                 response.action = .none
                 

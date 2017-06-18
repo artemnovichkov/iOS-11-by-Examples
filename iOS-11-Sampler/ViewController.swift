@@ -14,6 +14,7 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
@@ -48,4 +49,3 @@ extension ViewController {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
-

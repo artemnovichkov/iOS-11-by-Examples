@@ -11,6 +11,7 @@
 		0605195E1EF63A4E00EF8CC6 /* MessagesFilter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */; };
 		060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */; };
+		062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
 		06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C7B1EF543DD00CA9279 /* Main.storyboard */; };
@@ -29,7 +30,6 @@
 		06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */; };
 		06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6471EF6B07300E0A4FB /* art.scnassets */; };
 		06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */; };
-		06F9D64C1EF6DBBF00E0A4FB /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D64B1EF6DB4300E0A4FB /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +64,7 @@
 		060519641EF63CC000EF8CC6 /* iOS-11-Sampler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-11-Sampler.entitlements"; sourceTree = "<group>"; };
 		060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentityLookup.storyboard; sourceTree = "<group>"; };
 		060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityLookupViewController.swift; sourceTree = "<group>"; };
+		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B51C791EF543DD00CA9279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 		06F9D6471EF6B07300E0A4FB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
-		06F9D64B1EF6DB4300E0A4FB /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +177,7 @@
 		06B51C911EF5593300CA9279 /* CoreML */ = {
 			isa = PBXGroup;
 			children = (
-				06F9D64B1EF6DB4300E0A4FB /* Inceptionv3.mlmodel */,
+				062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */,
 				06B51C921EF5596F00CA9279 /* CoreML.storyboard */,
 				06B51C941EF5597900CA9279 /* CoreMLViewController.swift */,
 				06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */,
@@ -339,7 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06F9D64C1EF6DBBF00E0A4FB /* Inceptionv3.mlmodel in Sources */,
+				062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				06F9D6211EF6758500E0A4FB /* DeviceCheckViewController.swift in Sources */,

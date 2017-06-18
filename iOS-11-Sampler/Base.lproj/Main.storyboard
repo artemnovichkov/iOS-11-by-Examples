@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--iOS-11-Sampler-->
+        <!--👨🏻‍💻 iOS 11 Sampler-->
         <scene sceneID="8lt-KV-AV0">
             <objects>
                 <tableViewController id="z1k-Y2-8pl" customClass="ViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="92d-9X-Qh2" detailTextLabel="PiG-3b-lFn" style="IBUITableViewCellStyleSubtitle" id="mMU-op-Y3h">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" editingAccessoryType="disclosureIndicator" textLabel="92d-9X-Qh2" detailTextLabel="PiG-3b-lFn" style="IBUITableViewCellStyleSubtitle" id="mMU-op-Y3h">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mMU-op-Y3h" id="f9u-Zd-2rE">
@@ -47,7 +47,7 @@
                             <outlet property="delegate" destination="z1k-Y2-8pl" id="AUC-od-K0r"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="iOS-11-Sampler" id="Vfp-gO-Zf6"/>
+                    <navigationItem key="navigationItem" title="👨🏻‍💻 iOS 11 Sampler" id="Vfp-gO-Zf6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77R-hC-nQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
