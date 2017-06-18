@@ -15,3 +15,9 @@ Image recognition demo using Vision framework. Detects all faces on selected pho
 Image classification demo using Core ML framework. Show description of an object on selected photo.
 
 <img src="resources/coreml-example.png" width="200">
+
+### IdentityLookup
+
+SMS and MMS fultering using IdentityLookup framework. Don't forget to turn on an extension in Messages > Unknown & Spam > SMS filetering
+
+<img src="resources/identity-lookup-example.jpeg" width="200">

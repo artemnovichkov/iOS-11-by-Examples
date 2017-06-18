@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vds-ak-Zjd">
-                                <rect key="frame" x="37.5" y="318" width="300" height="30"/>
+                                <rect key="frame" x="37.5" y="36" width="300" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="wZ7-1C-thC"/>
                                 </constraints>
@@ -30,7 +30,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXA-vT-q7m">
-                                <rect key="frame" x="105.5" y="356" width="164" height="30"/>
+                                <rect key="frame" x="105.5" y="74" width="164" height="30"/>
                                 <state key="normal" title="Add number for filtering"/>
                                 <connections>
                                     <action selector="filterButtonAction:" destination="c85-uz-luL" eventType="touchUpInside" id="GEc-tf-opr"/>
@@ -39,9 +39,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vds-ak-Zjd" firstAttribute="centerY" secondItem="eoE-FA-F6d" secondAttribute="centerY" id="85Z-5C-zKL"/>
                             <constraint firstItem="vds-ak-Zjd" firstAttribute="centerX" secondItem="eoE-FA-F6d" secondAttribute="centerX" id="E0O-46-GAm"/>
                             <constraint firstItem="zXA-vT-q7m" firstAttribute="top" secondItem="vds-ak-Zjd" secondAttribute="bottom" constant="8" id="NLp-tM-Ma5"/>
+                            <constraint firstItem="vds-ak-Zjd" firstAttribute="top" secondItem="T9G-Kk-zP0" secondAttribute="bottom" constant="16" id="Zay-D9-ru1"/>
                             <constraint firstItem="zXA-vT-q7m" firstAttribute="centerX" secondItem="eoE-FA-F6d" secondAttribute="centerX" id="dp4-cC-y5o"/>
                         </constraints>
                     </view>

@@ -45,6 +45,7 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
     }
     
     private func offlineAction(for queryRequest: ILMessageFilterQueryRequest) -> ILMessageFilterAction {
+        print("Sender: \(queryRequest.sender), body: \(queryRequest.messageBody)")
         let blockedNumber = UserDefaults(suiteName: "group.com.artemnovichkov.iOS-11-Sampler")?.blockedNumber
         if queryRequest.sender == blockedNumber {
             return .filter
