@@ -11,10 +11,9 @@ import UIKit
 class ViewController: UITableViewController {
     
     var dataSource = DataSource()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+}
+
+extension ViewController {
     
     // MARK: UITableViewDataSource
     
