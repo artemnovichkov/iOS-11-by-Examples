@@ -29,6 +29,7 @@
 		06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6431EF6B02100E0A4FB /* ARKit.storyboard */; };
 		06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */; };
 		06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6471EF6B07300E0A4FB /* art.scnassets */; };
+		06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		06F9D6431EF6B02100E0A4FB /* ARKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARKit.storyboard; sourceTree = "<group>"; };
 		06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 		06F9D6471EF6B07300E0A4FB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */,
 				06B51C921EF5596F00CA9279 /* CoreML.storyboard */,
 				06B51C941EF5597900CA9279 /* CoreMLViewController.swift */,
+				06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */,
 			);
 			path = CoreML;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,
 				06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */,
+				06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */,
 				06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */,
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,

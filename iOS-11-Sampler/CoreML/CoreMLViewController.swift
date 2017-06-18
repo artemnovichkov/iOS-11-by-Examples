@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Vision
+import CoreML
 
 class CoreMLViewController: UIViewController {
     
@@ -21,38 +21,23 @@ class CoreMLViewController: UIViewController {
     
     func process(_ image: UIImage) {
         imageView.image = image
-        guard let ciImage = CIImage(image: image) else {
+        
+        guard let pixelBuffer = image.pixelBuffer else {
             return
         }
-        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
-            return
-        }
-        let request = VNCoreMLRequest(model: model) { [unowned self] request, error in
-            if let error = error {
-                print(error)
-            }
-            else {
-                self.handleObjects(with: request)
-            }
-        }
-        let handler = VNImageRequestHandler(ciImage: ciImage, options: [:])
+        let model = Inceptionv3()
         do {
-            try handler.perform([request])
+            let output = try model.prediction(image: pixelBuffer)
+            let probs = output.classLabelProbs.sorted { $0.value > $1.value }
+            if let prob = probs.first {
+                label.text = "\(prob.key) \(prob.value)"
+            }
         }
         catch {
             print(error)
         }
     }
     
-    func handleObjects(with request: VNRequest) {
-        guard let results = request.results as? [VNClassificationObservation] else {
-            fatalError("Results Error")
-        }
-        
-        if let observation = results.first {
-            label.text = "\(observation.identifier) \(observation.confidence)"
-        }
-    }
     @IBAction func buttonAction(_ sender: Any) {
         let imagePickerController = UIImagePickerController()
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
