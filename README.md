@@ -29,3 +29,7 @@ Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID i
 ### DeviceCheck
 
 Identifying devices that have already taken advantage of a promotional offer that you provide, or flagging a device that you have determined to be fraudulent.
+
+### ARKit
+
+Augmented reality experiences in your app or game.

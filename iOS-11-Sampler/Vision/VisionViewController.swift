@@ -19,7 +19,7 @@ class VisionViewController: UIViewController {
     
     func process(_ image: UIImage) {
         imageView.image = image
-        guard let ciImage = image.ciImage else {
+        guard let ciImage = CIImage(image: image) else {
             return
         }
         let request = VNDetectFaceRectanglesRequest { [unowned self] request, error in

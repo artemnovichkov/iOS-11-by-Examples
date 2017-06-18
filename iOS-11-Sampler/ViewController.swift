@@ -11,6 +11,11 @@ import UIKit
 class ViewController: UITableViewController {
     
     var dataSource = DataSource()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
 }
 
 extension ViewController {
