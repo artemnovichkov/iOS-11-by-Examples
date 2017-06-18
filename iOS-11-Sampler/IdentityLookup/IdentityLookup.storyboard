@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c85-uz-luL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Identity Lookup View Controller-->
+        <scene sceneID="hnW-88-Sox">
+            <objects>
+                <viewController id="c85-uz-luL" customClass="IdentityLookupViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T9G-Kk-zP0"/>
+                        <viewControllerLayoutGuide type="bottom" id="eim-C6-WC7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eoE-FA-F6d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vds-ak-Zjd">
+                                <rect key="frame" x="37.5" y="318" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="wZ7-1C-thC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXA-vT-q7m">
+                                <rect key="frame" x="105.5" y="356" width="164" height="30"/>
+                                <state key="normal" title="Add number for filtering"/>
+                                <connections>
+                                    <action selector="filterButtonAction:" destination="c85-uz-luL" eventType="touchUpInside" id="GEc-tf-opr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vds-ak-Zjd" firstAttribute="centerY" secondItem="eoE-FA-F6d" secondAttribute="centerY" id="85Z-5C-zKL"/>
+                            <constraint firstItem="vds-ak-Zjd" firstAttribute="centerX" secondItem="eoE-FA-F6d" secondAttribute="centerX" id="E0O-46-GAm"/>
+                            <constraint firstItem="zXA-vT-q7m" firstAttribute="top" secondItem="vds-ak-Zjd" secondAttribute="bottom" constant="8" id="NLp-tM-Ma5"/>
+                            <constraint firstItem="zXA-vT-q7m" firstAttribute="centerX" secondItem="eoE-FA-F6d" secondAttribute="centerX" id="dp4-cC-y5o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="vds-ak-Zjd" id="cOl-La-mRh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgX-Hx-aEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="158.77061469265368"/>
+        </scene>
+    </scenes>
+</document>

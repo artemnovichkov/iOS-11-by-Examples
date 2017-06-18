@@ -23,5 +23,6 @@ struct Sample {
 
 struct DataSource {
     lazy var samples = [Sample(title: "Vision", description: "Vision description", storyboardName: "Vision"),
-                        Sample(title: "Core ML", description: "Core ML description", storyboardName: "CoreML")]
+                        Sample(title: "Core ML", description: "Core ML description", storyboardName: "CoreML"),
+                        Sample(title: "IdentityLookup", description: "Filter unwanted SMS and MMS messages", storyboardName: "IdentityLookup")]
 }

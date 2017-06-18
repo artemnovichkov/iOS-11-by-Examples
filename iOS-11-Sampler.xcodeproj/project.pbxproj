@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0605195A1EF63A4E00EF8CC6 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060519591EF63A4E00EF8CC6 /* MessageFilterExtension.swift */; };
+		0605195E1EF63A4E00EF8CC6 /* MessagesFilter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */; };
+		060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
 		06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C7B1EF543DD00CA9279 /* Main.storyboard */; };
@@ -20,7 +24,38 @@
 		06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0605195C1EF63A4E00EF8CC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06B51C6C1EF543DD00CA9279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 060519561EF63A4E00EF8CC6;
+			remoteInfo = MessagesFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		060519621EF63A4E00EF8CC6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0605195E1EF63A4E00EF8CC6 /* MessagesFilter.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesFilter.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		060519591EF63A4E00EF8CC6 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		0605195B1EF63A4E00EF8CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		060519631EF63C9600EF8CC6 /* MessagesFilter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessagesFilter.entitlements; sourceTree = "<group>"; };
+		060519641EF63CC000EF8CC6 /* iOS-11-Sampler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-11-Sampler.entitlements"; sourceTree = "<group>"; };
+		060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentityLookup.storyboard; sourceTree = "<group>"; };
+		060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityLookupViewController.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B51C791EF543DD00CA9279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +73,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		060519541EF63A4E00EF8CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06B51C711EF543DD00CA9279 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,11 +90,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060519581EF63A4E00EF8CC6 /* MessagesFilter */ = {
+			isa = PBXGroup;
+			children = (
+				060519631EF63C9600EF8CC6 /* MessagesFilter.entitlements */,
+				060519591EF63A4E00EF8CC6 /* MessageFilterExtension.swift */,
+				0605195B1EF63A4E00EF8CC6 /* Info.plist */,
+			);
+			path = MessagesFilter;
+			sourceTree = "<group>";
+		};
+		060519651EF63CDC00EF8CC6 /* IdentityLookup */ = {
+			isa = PBXGroup;
+			children = (
+				060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */,
+				060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */,
+			);
+			path = IdentityLookup;
+			sourceTree = "<group>";
+		};
 		06B51C6B1EF543DD00CA9279 = {
 			isa = PBXGroup;
 			children = (
 				06B51C901EF5492800CA9279 /* README.md */,
 				06B51C761EF543DD00CA9279 /* iOS-11-Sampler */,
+				060519581EF63A4E00EF8CC6 /* MessagesFilter */,
 				06B51C751EF543DD00CA9279 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				06B51C741EF543DD00CA9279 /* iOS-11-Sampler.app */,
+				060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +131,8 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-Sampler */ = {
 			isa = PBXGroup;
 			children = (
+				060519651EF63CDC00EF8CC6 /* IdentityLookup */,
+				060519641EF63CC000EF8CC6 /* iOS-11-Sampler.entitlements */,
 				06B51C911EF5593300CA9279 /* CoreML */,
 				06B51C8B1EF547B700CA9279 /* Vision */,
 				06B51C771EF543DD00CA9279 /* AppDelegate.swift */,
@@ -103,6 +168,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		060519561EF63A4E00EF8CC6 /* MessagesFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 060519611EF63A4E00EF8CC6 /* Build configuration list for PBXNativeTarget "MessagesFilter" */;
+			buildPhases = (
+				060519531EF63A4E00EF8CC6 /* Sources */,
+				060519541EF63A4E00EF8CC6 /* Frameworks */,
+				060519551EF63A4E00EF8CC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesFilter;
+			productName = MessagesFilter;
+			productReference = 060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		06B51C731EF543DD00CA9279 /* iOS-11-Sampler */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06B51C861EF543DD00CA9279 /* Build configuration list for PBXNativeTarget "iOS-11-Sampler" */;
@@ -110,10 +192,12 @@
 				06B51C701EF543DD00CA9279 /* Sources */,
 				06B51C711EF543DD00CA9279 /* Frameworks */,
 				06B51C721EF543DD00CA9279 /* Resources */,
+				060519621EF63A4E00EF8CC6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0605195D1EF63A4E00EF8CC6 /* PBXTargetDependency */,
 			);
 			name = "iOS-11-Sampler";
 			productName = "iOS-11-Sampler";
@@ -130,8 +214,21 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Artem Novichkov";
 				TargetAttributes = {
+					060519561EF63A4E00EF8CC6 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					06B51C731EF543DD00CA9279 = {
 						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -149,11 +246,19 @@
 			projectRoot = "";
 			targets = (
 				06B51C731EF543DD00CA9279 /* iOS-11-Sampler */,
+				060519561EF63A4E00EF8CC6 /* MessagesFilter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		060519551EF63A4E00EF8CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06B51C721EF543DD00CA9279 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,6 +267,7 @@
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
 				06B51C7F1EF543DD00CA9279 /* Assets.xcassets in Resources */,
+				060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */,
 				06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +275,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		060519531EF63A4E00EF8CC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0605195A1EF63A4E00EF8CC6 /* MessageFilterExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06B51C701EF543DD00CA9279 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,11 +292,20 @@
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,
+				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0605195D1EF63A4E00EF8CC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 060519561EF63A4E00EF8CC6 /* MessagesFilter */;
+			targetProxy = 0605195C1EF63A4E00EF8CC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		06B51C7B1EF543DD00CA9279 /* Main.storyboard */ = {
@@ -204,6 +327,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0605195F1EF63A4E00EF8CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MessagesFilter/MessagesFilter.entitlements;
+				DEVELOPMENT_TEAM = 79RZ866842;
+				INFOPLIST_FILE = MessagesFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler.MessagesFilter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		060519601EF63A4E00EF8CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MessagesFilter/MessagesFilter.entitlements;
+				DEVELOPMENT_TEAM = 79RZ866842;
+				INFOPLIST_FILE = MessagesFilter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler.MessagesFilter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		06B51C841EF543DD00CA9279 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -310,7 +463,10 @@
 		06B51C871EF543DD00CA9279 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-11-Sampler/iOS-11-Sampler.entitlements";
+				DEVELOPMENT_TEAM = 79RZ866842;
 				INFOPLIST_FILE = "iOS-11-Sampler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler";
@@ -323,7 +479,10 @@
 		06B51C881EF543DD00CA9279 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS-11-Sampler/iOS-11-Sampler.entitlements";
+				DEVELOPMENT_TEAM = 79RZ866842;
 				INFOPLIST_FILE = "iOS-11-Sampler/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler";
@@ -336,6 +495,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		060519611EF63A4E00EF8CC6 /* Build configuration list for PBXNativeTarget "MessagesFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0605195F1EF63A4E00EF8CC6 /* Debug */,
+				060519601EF63A4E00EF8CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-Sampler" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -352,6 +519,7 @@
 				06B51C881EF543DD00CA9279 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
