@@ -37,3 +37,7 @@ SMS and MMS filtering using IdentityLookup framework. Don't forget to turn on an
 ### DeviceCheck
 
 Identifying devices that have already taken advantage of a promotional offer that you provide, or flagging a device that you have determined to be fraudulent.
+
+## Author
+
+Artem Novichkov, novichkoff93@gmail.com
