@@ -21,7 +21,6 @@
 		06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C8E1EF547D400CA9279 /* VisionViewController.swift */; };
 		06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C921EF5596F00CA9279 /* CoreML.storyboard */; };
 		06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C941EF5597900CA9279 /* CoreMLViewController.swift */; };
-		06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */; };
 		06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */; };
 		06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */; };
 		06F9D6201EF6758200E0A4FB /* DeviceCheck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D61E1EF674EC00E0A4FB /* DeviceCheck.storyboard */; };
@@ -30,6 +29,7 @@
 		06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */; };
 		06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6471EF6B07300E0A4FB /* art.scnassets */; };
 		06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */; };
+		06F9D64C1EF6DBBF00E0A4FB /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D64B1EF6DB4300E0A4FB /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,6 @@
 		06B51C901EF5492800CA9279 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		06B51C921EF5596F00CA9279 /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
 		06B51C941EF5597900CA9279 /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
-		06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreNFC.storyboard; sourceTree = "<group>"; };
 		06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNFCViewController.swift; sourceTree = "<group>"; };
 		06F9D61E1EF674EC00E0A4FB /* DeviceCheck.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeviceCheck.storyboard; sourceTree = "<group>"; };
@@ -86,6 +85,7 @@
 		06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 		06F9D6471EF6B07300E0A4FB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
+		06F9D64B1EF6DB4300E0A4FB /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,11 +156,11 @@
 				06B51C8B1EF547B700CA9279 /* Vision */,
 				06B51C771EF543DD00CA9279 /* AppDelegate.swift */,
 				06B51C791EF543DD00CA9279 /* ViewController.swift */,
+				06B51C891EF5454000CA9279 /* DataSource.swift */,
 				06B51C7B1EF543DD00CA9279 /* Main.storyboard */,
 				06B51C7E1EF543DD00CA9279 /* Assets.xcassets */,
 				06B51C801EF543DD00CA9279 /* LaunchScreen.storyboard */,
 				06B51C831EF543DD00CA9279 /* Info.plist */,
-				06B51C891EF5454000CA9279 /* DataSource.swift */,
 			);
 			path = "iOS-11-Sampler";
 			sourceTree = "<group>";
@@ -177,7 +177,7 @@
 		06B51C911EF5593300CA9279 /* CoreML */ = {
 			isa = PBXGroup;
 			children = (
-				06B51C961EF559D000CA9279 /* Inceptionv3.mlmodel */,
+				06F9D64B1EF6DB4300E0A4FB /* Inceptionv3.mlmodel */,
 				06B51C921EF5596F00CA9279 /* CoreML.storyboard */,
 				06B51C941EF5597900CA9279 /* CoreMLViewController.swift */,
 				06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */,
@@ -339,8 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F9D64C1EF6DBBF00E0A4FB /* Inceptionv3.mlmodel in Sources */,
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
-				06B51C971EF559D000CA9279 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				06F9D6211EF6758500E0A4FB /* DeviceCheckViewController.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
