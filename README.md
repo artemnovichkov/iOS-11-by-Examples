@@ -23,3 +23,5 @@ SMS and MMS fultering using IdentityLookup framework. Don't forget to turn on an
 <img src="resources/identity-lookup-example.jpeg" width="200">
 
 ### Core NFC
+
+Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site

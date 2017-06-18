@@ -16,6 +16,12 @@ class CoreNFCViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func scanAction(_ sender: Any) {
         session = NFCNDEFReaderSession(delegate: self, queue: nil, invalidateAfterFirstRead: true)
         session?.begin()
     }
@@ -48,6 +54,18 @@ extension CoreNFCViewController: NFCNDEFReaderSessionDelegate {
             payloads = message.records
             DispatchQueue.main.async {
                 self.tableView.reloadData()
+            }
+        }
+        
+        //https://github.com/hansemannn/iOS11-NFC-Example#getting-started
+        
+        for message in messages {
+            print(" - \(message.records.count) Records:")
+            for record in message.records {
+                print("\t- TNF (TypeNameFormat): \(record.dataDescription))")
+                print("\t- Payload: \(String(data: record.payload, encoding: .utf8)!)")
+                print("\t- Type: \(record.type)")
+                print("\t- Identifier: \(record.identifier)\n")
             }
         }
     }

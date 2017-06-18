@@ -31,10 +31,17 @@
                             <outlet property="delegate" destination="Z3S-KH-ogG" id="N89-re-Ke2"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="e98-y6-e9q">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="Bfk-d8-yIL">
+                            <connections>
+                                <action selector="scanAction:" destination="Z3S-KH-ogG" id="BRQ-Gc-fts"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGz-Jz-43l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-330" y="144"/>
+            <point key="canvasLocation" x="8.8000000000000007" y="143.47826086956522"/>
         </scene>
     </scenes>
 </document>
