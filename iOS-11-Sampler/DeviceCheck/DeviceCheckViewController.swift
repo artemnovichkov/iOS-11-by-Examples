@@ -15,8 +15,8 @@ class DeviceCheckViewController: UIViewController {
         super.viewDidLoad()
         
         DCDevice.current.generateToken { data, error in
-            print(data)
-            print(error)
+            print(data ?? "No data")
+            print(error ?? "No errors")
         }
     }
 }

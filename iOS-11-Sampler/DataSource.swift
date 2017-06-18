@@ -26,5 +26,6 @@ struct DataSource {
                         Sample(title: "Core ML", description: "Core ML description", storyboardName: "CoreML"),
                         Sample(title: "IdentityLookup", description: "Filter unwanted SMS and MMS messages", storyboardName: "IdentityLookup"),
                         Sample(title: "Core NFC", description: "Reading of NFC tags", storyboardName: "CoreNFC"),
-                        Sample(title: "DeviceCheck", description: "Access per-device, per-developer data that your associated server can use in its business logic.", storyboardName: "DeviceCheck")]
+                        Sample(title: "DeviceCheck", description: "Access per-device, per-developer data that your associated server can use in its business logic.", storyboardName: "DeviceCheck"),
+                        Sample(title: "ARKit", description: "Augmented reality experiences in your app or game", storyboardName: "ARKit")]
 }

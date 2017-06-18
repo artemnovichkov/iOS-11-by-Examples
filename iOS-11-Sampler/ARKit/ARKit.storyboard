@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hSF-R1-P4b">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kit View Controller-->
+        <scene sceneID="OK6-gt-HUC">
+            <objects>
+                <viewController id="hSF-R1-P4b" customClass="ARKitViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DW4-89-eP4"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhz-0x-c3H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DsM-uk-z7Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ku-m9-zdI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Ku-m9-zdI" firstAttribute="top" secondItem="DsM-uk-z7Q" secondAttribute="top" id="OHw-fr-UjV"/>
+                            <constraint firstItem="1Ku-m9-zdI" firstAttribute="leading" secondItem="DsM-uk-z7Q" secondAttribute="leading" id="SaC-l3-m4S"/>
+                            <constraint firstItem="hhz-0x-c3H" firstAttribute="top" secondItem="1Ku-m9-zdI" secondAttribute="bottom" id="cMm-BC-z6A"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ku-m9-zdI" secondAttribute="trailing" id="hdW-Su-afS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="1Ku-m9-zdI" id="QiD-5r-BFW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KE8-wp-QVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="86.806596701649184"/>
+        </scene>
+    </scenes>
+</document>
