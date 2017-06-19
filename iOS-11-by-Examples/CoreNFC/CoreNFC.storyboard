@@ -11,7 +11,7 @@
         <!--CoreNFC View Controller-->
         <scene sceneID="WZK-TY-hQh">
             <objects>
-                <tableViewController id="Z3S-KH-ogG" customClass="CoreNFCViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Z3S-KH-ogG" customClass="CoreNFCViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nN2-zv-ZX1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -51,18 +51,6 @@ extension CoreNFCViewController: NFCNDEFReaderSessionDelegate {
                 self.tableView.reloadData()
             }
         }
-        
-        //https://github.com/hansemannn/iOS11-NFC-Example#getting-started
-        
-        for message in messages {
-            print(" - \(message.records.count) Records:")
-            for record in message.records {
-                print("\t- TNF (TypeNameFormat): \(record.dataDescription))")
-                print("\t- Payload: \(String(data: record.payload, encoding: .utf8)!)")
-                print("\t- Type: \(record.type)")
-                print("\t- Identifier: \(record.identifier)\n")
-            }
-        }
     }
 }
 
@@ -79,13 +67,28 @@ extension CoreNFCViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         
         let record = payloads[indexPath.row]
-        cell.textLabel?.text = record.dataDescription
+        cell.textLabel?.text = record.fullDescription
+        print(record.fullDescription)
         
         return cell
     }
 }
 
 extension NFCNDEFPayload {
+    
+    var fullDescription: String {
+        var description = "TNF (TypeNameFormat): \(dataDescription)\n"
+        
+        let payload = String(data: self.payload, encoding: .utf8) ?? "No payload"
+        let type = String(data: self.type, encoding: .utf8) ?? "No type"
+        let identifier = String(data: self.identifier, encoding: .utf8) ?? "No identifier"
+        
+        description += "Payload: \(payload)\n"
+        description += "Type: \(type)\n"
+        description += "Identifier: \(identifier)\n"
+        
+        return description.replacingOccurrences(of: "\0", with: "")
+    }
     
     var dataDescription: String {
         switch typeNameFormat {
@@ -95,10 +98,7 @@ extension NFCNDEFPayload {
             }
             return "Invalid data"
         case .absoluteURI:
-            if let text = String(data: payload, encoding: .utf8) {
-                return text
-            }
-            return "Invalid data"
+            return String(data: payload, encoding: .utf8) ?? "Invalid data"
         case .media:
             if let type = String(data: type, encoding: .utf8) {
                 return "Media type: " + type
@@ -110,7 +110,7 @@ extension NFCNDEFPayload {
             return "Unknown type"
         case .unchanged:
             return "Unchanged type"
-        default:
+        case .empty:
             return "Invalid data"
         }
     }
