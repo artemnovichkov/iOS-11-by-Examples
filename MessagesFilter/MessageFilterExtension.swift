@@ -47,7 +47,7 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
         let sender = queryRequest.sender ?? "No sender"
         let messageBody = queryRequest.sender ?? "No body"
         print("Sender: \(sender), body: \(messageBody)")
-        let blockedNumber = UserDefaults(suiteName: "group.com.artemnovichkov.iOS-11-Sampler")?.blockedNumber
+        let blockedNumber = UserDefaults(suiteName: "group.com.artemnovichkov.iOS-11-by-Examples")?.blockedNumber
         if queryRequest.sender == blockedNumber {
             return .filter
         }

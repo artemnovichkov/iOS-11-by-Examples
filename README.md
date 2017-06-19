@@ -1,4 +1,4 @@
-# iOS-11-Sampler
+# iOS 11 by Examples
 
 Code examples for new APIs of iOS 11.
 

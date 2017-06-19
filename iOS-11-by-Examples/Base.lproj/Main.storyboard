@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--👨🏻‍💻 iOS 11 Sampler-->
+        <!--👨🏻‍💻 iOS 11 by Examples-->
         <scene sceneID="8lt-KV-AV0">
             <objects>
-                <tableViewController id="z1k-Y2-8pl" customClass="ViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="z1k-Y2-8pl" customClass="ViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3KK-Di-FKx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                             <outlet property="delegate" destination="z1k-Y2-8pl" id="AUC-od-K0r"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="👨🏻‍💻 iOS 11 Sampler" id="Vfp-gO-Zf6"/>
+                    <navigationItem key="navigationItem" title="👨🏻‍💻 iOS 11 by Examples" id="Vfp-gO-Zf6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="77R-hC-nQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

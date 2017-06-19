@@ -8,7 +8,7 @@
 	</array>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.artemnovichkov.iOS-11-Sampler-2</string>
+		<string>group.com.artemnovichkov.iOS-11-by-Examples</string>
 	</array>
 </dict>
 </plist>

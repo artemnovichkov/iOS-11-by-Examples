@@ -61,11 +61,11 @@
 		060519591EF63A4E00EF8CC6 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
 		0605195B1EF63A4E00EF8CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		060519631EF63C9600EF8CC6 /* MessagesFilter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessagesFilter.entitlements; sourceTree = "<group>"; };
-		060519641EF63CC000EF8CC6 /* iOS-11-Sampler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-11-Sampler.entitlements"; sourceTree = "<group>"; };
+		060519641EF63CC000EF8CC6 /* iOS-11-by-Examples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-11-by-Examples.entitlements"; sourceTree = "<group>"; };
 		060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentityLookup.storyboard; sourceTree = "<group>"; };
 		060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityLookupViewController.swift; sourceTree = "<group>"; };
 		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		06B51C741EF543DD00CA9279 /* iOS-11-Sampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-Sampler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B51C791EF543DD00CA9279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		06B51C7C1EF543DD00CA9279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				06B51C901EF5492800CA9279 /* README.md */,
-				06B51C761EF543DD00CA9279 /* iOS-11-Sampler */,
+				06B51C761EF543DD00CA9279 /* iOS-11-by-Examples */,
 				060519581EF63A4E00EF8CC6 /* MessagesFilter */,
 				06B51C751EF543DD00CA9279 /* Products */,
 			);
@@ -138,20 +138,20 @@
 		06B51C751EF543DD00CA9279 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				06B51C741EF543DD00CA9279 /* iOS-11-Sampler.app */,
+				06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */,
 				060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		06B51C761EF543DD00CA9279 /* iOS-11-Sampler */ = {
+		06B51C761EF543DD00CA9279 /* iOS-11-by-Examples */ = {
 			isa = PBXGroup;
 			children = (
 				06F9D6421EF6B01500E0A4FB /* ARKit */,
 				06F9D61D1EF674EC00E0A4FB /* DeviceCheck */,
 				06ED736B1EF65BFC0060456F /* CoreNFC */,
 				060519651EF63CDC00EF8CC6 /* IdentityLookup */,
-				060519641EF63CC000EF8CC6 /* iOS-11-Sampler.entitlements */,
+				060519641EF63CC000EF8CC6 /* iOS-11-by-Examples.entitlements */,
 				06B51C911EF5593300CA9279 /* CoreML */,
 				06B51C8B1EF547B700CA9279 /* Vision */,
 				06B51C771EF543DD00CA9279 /* AppDelegate.swift */,
@@ -162,7 +162,7 @@
 				06B51C801EF543DD00CA9279 /* LaunchScreen.storyboard */,
 				06B51C831EF543DD00CA9279 /* Info.plist */,
 			);
-			path = "iOS-11-Sampler";
+			path = "iOS-11-by-Examples";
 			sourceTree = "<group>";
 		};
 		06B51C8B1EF547B700CA9279 /* Vision */ = {
@@ -233,9 +233,9 @@
 			productReference = 060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		06B51C731EF543DD00CA9279 /* iOS-11-Sampler */ = {
+		06B51C731EF543DD00CA9279 /* iOS-11-by-Examples */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06B51C861EF543DD00CA9279 /* Build configuration list for PBXNativeTarget "iOS-11-Sampler" */;
+			buildConfigurationList = 06B51C861EF543DD00CA9279 /* Build configuration list for PBXNativeTarget "iOS-11-by-Examples" */;
 			buildPhases = (
 				06B51C701EF543DD00CA9279 /* Sources */,
 				06B51C711EF543DD00CA9279 /* Frameworks */,
@@ -247,9 +247,9 @@
 			dependencies = (
 				0605195D1EF63A4E00EF8CC6 /* PBXTargetDependency */,
 			);
-			name = "iOS-11-Sampler";
+			name = "iOS-11-by-Examples";
 			productName = "iOS-11-Sampler";
-			productReference = 06B51C741EF543DD00CA9279 /* iOS-11-Sampler.app */;
+			productReference = 06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -280,7 +280,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-Sampler" */;
+			buildConfigurationList = 06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-by-Examples" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -293,7 +293,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				06B51C731EF543DD00CA9279 /* iOS-11-Sampler */,
+				06B51C731EF543DD00CA9279 /* iOS-11-by-Examples */,
 				060519561EF63A4E00EF8CC6 /* MessagesFilter */,
 			);
 		};
@@ -390,7 +390,7 @@
 				DEVELOPMENT_TEAM = GPVA8JVMU3;
 				INFOPLIST_FILE = MessagesFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler-2.MessagesFilter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-by-Examples.MessagesFilter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -405,7 +405,7 @@
 				DEVELOPMENT_TEAM = GPVA8JVMU3;
 				INFOPLIST_FILE = MessagesFilter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler-2.MessagesFilter";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-by-Examples.MessagesFilter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -521,11 +521,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "iOS-11-Sampler/iOS-11-Sampler.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS-11-by-Examples/iOS-11-by-Examples.entitlements";
 				DEVELOPMENT_TEAM = GPVA8JVMU3;
-				INFOPLIST_FILE = "iOS-11-Sampler/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-11-by-Examples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-by-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -537,11 +537,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "iOS-11-Sampler/iOS-11-Sampler.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "iOS-11-by-Examples/iOS-11-by-Examples.entitlements";
 				DEVELOPMENT_TEAM = GPVA8JVMU3;
-				INFOPLIST_FILE = "iOS-11-Sampler/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/iOS-11-by-Examples/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-Sampler-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.artemnovichkov.iOS-11-by-Examples";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-Sampler" */ = {
+		06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-by-Examples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06B51C841EF543DD00CA9279 /* Debug */,
@@ -569,7 +569,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		06B51C861EF543DD00CA9279 /* Build configuration list for PBXNativeTarget "iOS-11-Sampler" */ = {
+		06B51C861EF543DD00CA9279 /* Build configuration list for PBXNativeTarget "iOS-11-by-Examples" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				06B51C871EF543DD00CA9279 /* Debug */,
