@@ -33,7 +33,8 @@ class CoreMLViewController: UIViewController {
             }
         }
         catch {
-            print(error)
+            self.presentAlertController(withTitle: title,
+                                        message: error.localizedDescription)
         }
     }
     

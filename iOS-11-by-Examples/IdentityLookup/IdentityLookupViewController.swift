@@ -20,11 +20,3 @@ class IdentityLookupViewController: UIViewController {
         UserDefaults(suiteName: "group.com.artemnovichkov.iOS-11-by-Examples")?.blockedNumber = textField.text
     }
 }
-
-extension UserDefaults {
-    
-    var blockedNumber: String? {
-        get { return string(forKey: #function) }
-        set { set(newValue, forKey: #function) }
-    }
-}

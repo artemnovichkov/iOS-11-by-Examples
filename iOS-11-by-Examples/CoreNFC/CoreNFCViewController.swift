@@ -37,14 +37,9 @@ extension CoreNFCViewController: NFCNDEFReaderSessionDelegate {
         case .readerSessionInvalidationErrorFirstNDEFTagRead, .readerSessionInvalidationErrorUserCanceled:
             break
         default:
-            let alertController = UIAlertController(title: "Session Invalidated",
-                                                    message: error.localizedDescription,
-                                                    preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Ok",
-                                                    style: .default,
-                                                    handler: nil))
             DispatchQueue.main.async {
-                self.present(alertController, animated: true, completion: nil)
+                self.presentAlertController(withTitle: "Session Invalidated",
+                                            message: error.localizedDescription)
             }
         }
     }

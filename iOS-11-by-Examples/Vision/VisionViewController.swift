@@ -10,7 +10,7 @@ import UIKit
 import Vision
 
 class VisionViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
     
     override func viewDidLoad() {
@@ -24,7 +24,8 @@ class VisionViewController: UIViewController {
         }
         let request = VNDetectFaceRectanglesRequest { [unowned self] request, error in
             if let error = error {
-                print(error)
+                self.presentAlertController(withTitle: self.title,
+                                            message: error.localizedDescription)
             }
             else {
                 self.handleFaces(with: request)
@@ -35,7 +36,8 @@ class VisionViewController: UIViewController {
             try handler.perform([request])
         }
         catch {
-            print(error)
+            presentAlertController(withTitle: title,
+                                   message: error.localizedDescription)
         }
     }
     

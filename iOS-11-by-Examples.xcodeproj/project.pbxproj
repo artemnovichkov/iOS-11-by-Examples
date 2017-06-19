@@ -12,6 +12,9 @@
 		060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */; };
 		060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */; };
 		062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */; };
+		0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */; };
+		0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
+		062096101EF75BEA0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
 		06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C7B1EF543DD00CA9279 /* Main.storyboard */; };
@@ -65,6 +68,8 @@
 		060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentityLookup.storyboard; sourceTree = "<group>"; };
 		060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityLookupViewController.swift; sourceTree = "<group>"; };
 		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B51C791EF543DD00CA9279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +130,15 @@
 			path = IdentityLookup;
 			sourceTree = "<group>";
 		};
+		0620960B1EF75A6D0019E369 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */,
+				0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		06B51C6B1EF543DD00CA9279 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +161,7 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-by-Examples */ = {
 			isa = PBXGroup;
 			children = (
+				0620960B1EF75A6D0019E369 /* Common */,
 				06F9D6421EF6B01500E0A4FB /* ARKit */,
 				06F9D61D1EF674EC00E0A4FB /* DeviceCheck */,
 				06ED736B1EF65BFC0060456F /* CoreNFC */,
@@ -331,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062096101EF75BEA0019E369 /* UserDefaults+Storage.swift in Sources */,
 				0605195A1EF63A4E00EF8CC6 /* MessageFilterExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +358,7 @@
 				062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
+				0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */,
 				06F9D6211EF6758500E0A4FB /* DeviceCheckViewController.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,
@@ -350,6 +367,7 @@
 				06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */,
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
+				0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

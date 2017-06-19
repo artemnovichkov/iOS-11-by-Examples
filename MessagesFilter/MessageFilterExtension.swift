@@ -59,11 +59,3 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling {
         return .none
     }
 }
-
-extension UserDefaults {
-    
-    var blockedNumber: String? {
-        get { return string(forKey: #function) }
-        set { set(newValue, forKey: #function) }
-    }
-}
