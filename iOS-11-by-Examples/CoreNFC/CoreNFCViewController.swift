@@ -64,20 +64,29 @@ extension CoreNFCViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! PayloadTableViewCell
         
         let record = payloads[indexPath.row]
-        cell.textLabel?.text = record.fullDescription
-        print(record.fullDescription)
+        cell.label.text = record.fullDescription
         
         return cell
+    }
+    
+    // MARK: UITableViewDelegate
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
 }
 
 extension NFCNDEFPayload {
     
     var fullDescription: String {
-        var description = "TNF (TypeNameFormat): \(dataDescription)\n"
+        var description = "TNF (TypeNameFormat): \(typeDescription)\n"
         
         let payload = String(data: self.payload, encoding: .utf8) ?? "No payload"
         let type = String(data: self.type, encoding: .utf8) ?? "No type"
@@ -90,13 +99,10 @@ extension NFCNDEFPayload {
         return description.replacingOccurrences(of: "\0", with: "")
     }
     
-    var dataDescription: String {
+    var typeDescription: String {
         switch typeNameFormat {
         case .nfcWellKnown:
-            if let type = String(data: type, encoding: .utf8) {
-                return "NFC Well Known type: " + type
-            }
-            return "Invalid data"
+            return String(data: type, encoding: .utf8) ?? "Invalid data"
         case .absoluteURI:
             return String(data: payload, encoding: .utf8) ?? "Invalid data"
         case .media:

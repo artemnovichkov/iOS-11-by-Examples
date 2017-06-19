@@ -15,6 +15,7 @@
 		0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */; };
 		0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
 		062096101EF75BEA0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
+		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
 		06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C7B1EF543DD00CA9279 /* Main.storyboard */; };
@@ -70,6 +71,7 @@
 		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
+		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B51C791EF543DD00CA9279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			children = (
 				06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */,
 				06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */,
+				0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */,
 			);
 			path = CoreNFC;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 			files = (
 				062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
+				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */,
 				06F9D6211EF6758500E0A4FB /* DeviceCheckViewController.swift in Sources */,

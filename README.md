@@ -8,13 +8,13 @@ Code examples for new APIs of iOS 11.
 
 Image classification demo using Core ML framework. Show description of an object on selected photo.
 
-<img src="resources/coreml-example.png" width="200">
+<img src="resources/coreml-example.jpeg" width="200">
 
 ### Vision
 
 Image recognition demo using Vision framework. Detects all faces on selected photo.
 
-<img src="resources/vision-example.png" width="200">
+<img src="resources/vision-example.jpeg" width="200">
 
 ### ARKit
 
@@ -27,6 +27,7 @@ Augmented reality experiences in your app or game.
 Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site.
 
 <img src="resources/corenfc-example.jpeg" width="200">
+<img src="resources/corenfc-example-2.jpeg" width="200">
 
 ### IdentityLookup
 
