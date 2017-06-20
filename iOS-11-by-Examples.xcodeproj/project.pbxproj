@@ -15,8 +15,9 @@
 		0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */; };
 		0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
 		062096101EF75BEA0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
-		0625FBC21EF9696700F0C2CE /* ObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0625FBC11EF9696700F0C2CE /* ObjectTracking.storyboard */; };
 		0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */; };
+		0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0625FBC61EF974E800F0C2CE /* Vision.storyboard */; };
+		0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625FBC81EF974F400F0C2CE /* VisionViewController.swift */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
@@ -24,8 +25,7 @@
 		06B51C7F1EF543DD00CA9279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C7E1EF543DD00CA9279 /* Assets.xcassets */; };
 		06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C801EF543DD00CA9279 /* LaunchScreen.storyboard */; };
 		06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C891EF5454000CA9279 /* DataSource.swift */; };
-		06B51C8D1EF547C600CA9279 /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C8C1EF547C600CA9279 /* Vision.storyboard */; };
-		06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C8E1EF547D400CA9279 /* VisionViewController.swift */; };
+		06B51C8F1EF547D400CA9279 /* FaceDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C8E1EF547D400CA9279 /* FaceDetectionViewController.swift */; };
 		06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C921EF5596F00CA9279 /* CoreML.storyboard */; };
 		06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C941EF5597900CA9279 /* CoreMLViewController.swift */; };
 		06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */; };
@@ -73,8 +73,9 @@
 		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
-		0625FBC11EF9696700F0C2CE /* ObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjectTracking.storyboard; sourceTree = "<group>"; };
 		0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTrackingViewController.swift; sourceTree = "<group>"; };
+		0625FBC61EF974E800F0C2CE /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
+		0625FBC81EF974F400F0C2CE /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,8 +85,7 @@
 		06B51C811EF543DD00CA9279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06B51C831EF543DD00CA9279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06B51C891EF5454000CA9279 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		06B51C8C1EF547C600CA9279 /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
-		06B51C8E1EF547D400CA9279 /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		06B51C8E1EF547D400CA9279 /* FaceDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionViewController.swift; sourceTree = "<group>"; };
 		06B51C901EF5492800CA9279 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		06B51C921EF5596F00CA9279 /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
 		06B51C941EF5597900CA9279 /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
@@ -148,10 +148,17 @@
 		0625FBC01EF9695700F0C2CE /* ObjectTracking */ = {
 			isa = PBXGroup;
 			children = (
-				0625FBC11EF9696700F0C2CE /* ObjectTracking.storyboard */,
 				0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */,
 			);
 			path = ObjectTracking;
+			sourceTree = "<group>";
+		};
+		0625FBC51EF974C700F0C2CE /* FaceDetection */ = {
+			isa = PBXGroup;
+			children = (
+				06B51C8E1EF547D400CA9279 /* FaceDetectionViewController.swift */,
+			);
+			path = FaceDetection;
 			sourceTree = "<group>";
 		};
 		06B51C6B1EF543DD00CA9279 = {
@@ -199,8 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				0625FBC01EF9695700F0C2CE /* ObjectTracking */,
-				06B51C8C1EF547C600CA9279 /* Vision.storyboard */,
-				06B51C8E1EF547D400CA9279 /* VisionViewController.swift */,
+				0625FBC51EF974C700F0C2CE /* FaceDetection */,
+				0625FBC61EF974E800F0C2CE /* Vision.storyboard */,
+				0625FBC81EF974F400F0C2CE /* VisionViewController.swift */,
 			);
 			path = Vision;
 			sourceTree = "<group>";
@@ -345,12 +353,11 @@
 			files = (
 				06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */,
 				06F9D6201EF6758200E0A4FB /* DeviceCheck.storyboard in Resources */,
-				06B51C8D1EF547C600CA9279 /* Vision.storyboard in Resources */,
-				0625FBC21EF9696700F0C2CE /* ObjectTracking.storyboard in Resources */,
 				06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */,
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
 				06B51C7F1EF543DD00CA9279 /* Assets.xcassets in Resources */,
+				0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */,
 				060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */,
 				06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */,
 				06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */,
@@ -374,7 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */,
-				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
+				06B51C8F1EF547D400CA9279 /* FaceDetectionViewController.swift in Sources */,
 				0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */,
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
@@ -385,6 +392,7 @@
 				06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */,
 				06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */,
 				06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */,
+				0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */,
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 				0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */,
@@ -471,6 +479,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -526,6 +536,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;

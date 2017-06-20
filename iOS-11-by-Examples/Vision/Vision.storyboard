@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H8L-Pr-BK6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uMW-Ne-VVg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,48 +10,110 @@
     </dependencies>
     <scenes>
         <!--Vision View Controller-->
-        <scene sceneID="cly-i5-JmW">
+        <scene sceneID="2mf-Yd-HKK">
             <objects>
-                <viewController id="H8L-Pr-BK6" customClass="VisionViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uMW-Ne-VVg" customClass="VisionViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QwT-6e-9IT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="D1D-Q9-tuC" detailTextLabel="0Ac-YF-NFm" style="IBUITableViewCellStyleSubtitle" id="wAM-vB-wwO">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wAM-vB-wwO" id="6fh-cI-pX2">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D1D-Q9-tuC">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0Ac-YF-NFm">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uMW-Ne-VVg" id="Vg7-3R-fKO"/>
+                            <outlet property="delegate" destination="uMW-Ne-VVg" id="EOO-7A-jWa"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Jg-dC-KmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="-101"/>
+        </scene>
+        <!--Object Tracking View Controller-->
+        <scene sceneID="9Dw-9l-EIG">
+            <objects>
+                <viewController storyboardIdentifier="ObjectTracking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m9F-Kt-ECC" customClass="ObjectTrackingViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6GH-6N-1L8"/>
-                        <viewControllerLayoutGuide type="bottom" id="CP8-xq-2By"/>
+                        <viewControllerLayoutGuide type="top" id="Ah6-Nh-cDc"/>
+                        <viewControllerLayoutGuide type="bottom" id="K57-E7-ewr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RMV-t5-2ee">
+                    <view key="view" contentMode="scaleToFill" id="vr4-39-j59">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6W-di-KYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="743" y="-101"/>
+        </scene>
+        <!--Face Detection View Controller-->
+        <scene sceneID="01I-Tc-psJ">
+            <objects>
+                <viewController storyboardIdentifier="FaceDetection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KDY-8N-3QH" customClass="FaceDetectionViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a1o-q2-OL3"/>
+                        <viewControllerLayoutGuide type="bottom" id="jVr-8e-wgn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v9v-Kf-u7t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ws-Lu-zv4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSW-FR-Byh">
                                 <rect key="frame" x="145" y="617" width="85" height="30"/>
                                 <state key="normal" title="Take a selfie"/>
                                 <connections>
-                                    <action selector="photoButtonAction:" destination="H8L-Pr-BK6" eventType="touchUpInside" id="z3o-9f-dF0"/>
+                                    <action selector="photoButtonAction:" destination="KDY-8N-3QH" eventType="touchUpInside" id="hiv-mn-nj5"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xi2-jb-BC7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h7R-a5-F76">
                                 <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="Xi2-jb-BC7" secondAttribute="height" multiplier="1:1" id="e0e-yk-oka"/>
+                                    <constraint firstAttribute="width" secondItem="h7R-a5-F76" secondAttribute="height" multiplier="1:1" id="S2V-J7-iSo"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CP8-xq-2By" firstAttribute="top" secondItem="6ws-Lu-zv4" secondAttribute="bottom" constant="20" id="LWU-79-YpR"/>
-                            <constraint firstItem="Xi2-jb-BC7" firstAttribute="centerY" secondItem="RMV-t5-2ee" secondAttribute="centerY" id="RhJ-U0-4Ut"/>
-                            <constraint firstItem="Xi2-jb-BC7" firstAttribute="leading" secondItem="RMV-t5-2ee" secondAttribute="leading" id="X3e-TI-Idp"/>
-                            <constraint firstAttribute="trailing" secondItem="Xi2-jb-BC7" secondAttribute="trailing" id="hkP-DC-DvG"/>
-                            <constraint firstItem="6ws-Lu-zv4" firstAttribute="centerX" secondItem="RMV-t5-2ee" secondAttribute="centerX" id="uzy-fl-IUY"/>
+                            <constraint firstItem="jVr-8e-wgn" firstAttribute="top" secondItem="hSW-FR-Byh" secondAttribute="bottom" constant="20" id="Faf-6Q-mMp"/>
+                            <constraint firstItem="hSW-FR-Byh" firstAttribute="centerX" secondItem="v9v-Kf-u7t" secondAttribute="centerX" id="Ycp-Ym-dlW"/>
+                            <constraint firstItem="h7R-a5-F76" firstAttribute="leading" secondItem="v9v-Kf-u7t" secondAttribute="leading" id="cZS-Zg-31A"/>
+                            <constraint firstItem="h7R-a5-F76" firstAttribute="centerY" secondItem="v9v-Kf-u7t" secondAttribute="centerY" id="d6n-Ct-c0W"/>
+                            <constraint firstAttribute="trailing" secondItem="h7R-a5-F76" secondAttribute="trailing" id="zuQ-DU-MKB"/>
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="imageView" destination="Xi2-jb-BC7" id="Pkj-p5-mfy"/>
+                        <outlet property="imageView" destination="h7R-a5-F76" id="VGR-SN-iK5"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nm7-jh-lIi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLg-Bu-66s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-112.8" y="-96.7016491754123"/>
+            <point key="canvasLocation" x="1538" y="-101"/>
         </scene>
     </scenes>
 </document>
