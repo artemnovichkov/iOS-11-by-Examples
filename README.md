@@ -3,6 +3,8 @@
 
 Code examples for new APIs of iOS 11.
 
+**Note**: The project requires Xcode 9 Beta 1 or later, Swift 4 and iOS 11.
+
 ## Contents
 
 ### Core ML
