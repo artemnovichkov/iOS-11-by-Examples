@@ -18,6 +18,11 @@ class VisionViewController: UITableViewController {
                                        description: "Track object with camera",
                                        storyboardName: "Vision",
                                        controllerID: "ObjectTracking")]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.tableFooterView = UIView()
+    }
 }
 
 extension VisionViewController {

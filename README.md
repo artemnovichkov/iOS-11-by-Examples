@@ -13,9 +13,13 @@ Image classification demo using Core ML framework. Show description of an object
 
 ### Vision
 
-Image recognition demo using Vision framework. Detects all faces on selected photo.
+ - Face detection. Detects all faces on selected photo.
 
-<img src="resources/vision-example.jpeg" width="200">
+<img src="resources/vision-face-detection-example.jpeg" width="200">
+
+- Object tracking. Track any object using camera.
+
+<img src="resources/vision-object-tracking-example.jpeg" width="200">
 
 ### ARKit
 
