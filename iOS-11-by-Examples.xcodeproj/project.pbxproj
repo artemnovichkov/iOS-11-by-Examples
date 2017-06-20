@@ -15,6 +15,8 @@
 		0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */; };
 		0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
 		062096101EF75BEA0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
+		0625FBC21EF9696700F0C2CE /* ObjectTracking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0625FBC11EF9696700F0C2CE /* ObjectTracking.storyboard */; };
+		0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
@@ -71,6 +73,8 @@
 		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
+		0625FBC11EF9696700F0C2CE /* ObjectTracking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjectTracking.storyboard; sourceTree = "<group>"; };
+		0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTrackingViewController.swift; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +145,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		0625FBC01EF9695700F0C2CE /* ObjectTracking */ = {
+			isa = PBXGroup;
+			children = (
+				0625FBC11EF9696700F0C2CE /* ObjectTracking.storyboard */,
+				0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */,
+			);
+			path = ObjectTracking;
+			sourceTree = "<group>";
+		};
 		06B51C6B1EF543DD00CA9279 = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +198,7 @@
 		06B51C8B1EF547B700CA9279 /* Vision */ = {
 			isa = PBXGroup;
 			children = (
+				0625FBC01EF9695700F0C2CE /* ObjectTracking */,
 				06B51C8C1EF547C600CA9279 /* Vision.storyboard */,
 				06B51C8E1EF547D400CA9279 /* VisionViewController.swift */,
 			);
@@ -332,6 +346,7 @@
 				06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */,
 				06F9D6201EF6758200E0A4FB /* DeviceCheck.storyboard in Resources */,
 				06B51C8D1EF547C600CA9279 /* Vision.storyboard in Resources */,
+				0625FBC21EF9696700F0C2CE /* ObjectTracking.storyboard in Resources */,
 				06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */,
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
@@ -360,6 +375,7 @@
 			files = (
 				062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8F1EF547D400CA9279 /* VisionViewController.swift in Sources */,
+				0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */,
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */,
