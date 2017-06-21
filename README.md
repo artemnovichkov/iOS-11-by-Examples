@@ -7,13 +7,13 @@ Code examples for new APIs of iOS 11.
 
 ## Contents
 
-### Core ML
+### [Core ML](https://developer.apple.com/documentation/coreml)
 
 Image classification demo using Core ML framework. Show description of an object on selected photo.
 
 <img src="resources/coreml-example.jpeg" width="200">
 
-### Vision
+### [Vision](https://developer.apple.com/documentation/vision)
 
  - Face detection. Detects all faces on selected photo.
 
@@ -23,25 +23,25 @@ Image classification demo using Core ML framework. Show description of an object
 
 <img src="resources/vision-object-tracking-example.jpeg" width="200">
 
-### ARKit
+### [ARKit](https://developer.apple.com/documentation/arkit)
 
 Augmented reality experiences in your app or game.
 
 <img src="resources/arkit-example.jpeg" width="200">
 
-### Core NFC
+### [Core NFC](https://developer.apple.com/documentation/corenfc)
 
 Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site.
 
 <img src="resources/corenfc-example.jpeg" width="200"> <img src="resources/corenfc-example-2.jpeg" width="200">
 
-### IdentityLookup
+### [IdentityLookup](https://developer.apple.com/documentation/identitylookup)
 
 SMS and MMS filtering using IdentityLookup framework. Don't forget to turn on an extension in Messages > Unknown & Spam > SMS filtering.
 
 <img src="resources/identity-lookup-example.jpeg" width="200">
 
-### DeviceCheck
+### [DeviceCheck](https://developer.apple.com/documentation/devicecheck)
 
 Identifying devices that have already taken advantage of a promotional offer that you provide, or flagging a device that you have determined to be fraudulent.
 
