@@ -11,13 +11,13 @@
 		0605195E1EF63A4E00EF8CC6 /* MessagesFilter.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 060519571EF63A4E00EF8CC6 /* MessagesFilter.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */; };
 		060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */; };
-		062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */; };
 		0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */; };
 		0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
 		062096101EF75BEA0019E369 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */; };
 		0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */; };
 		0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0625FBC61EF974E800F0C2CE /* Vision.storyboard */; };
 		0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625FBC81EF974F400F0C2CE /* VisionViewController.swift */; };
+		066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066391611EFE2581009AA024 /* LandmarksViewController.swift */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
@@ -70,12 +70,13 @@
 		060519641EF63CC000EF8CC6 /* iOS-11-by-Examples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS-11-by-Examples.entitlements"; sourceTree = "<group>"; };
 		060519661EF63CE500EF8CC6 /* IdentityLookup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IdentityLookup.storyboard; sourceTree = "<group>"; };
 		060519681EF63CF000EF8CC6 /* IdentityLookupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityLookupViewController.swift; sourceTree = "<group>"; };
-		062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		0620960E1EF75BCE0019E369 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
 		0625FBC31EF9697600F0C2CE /* ObjectTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTrackingViewController.swift; sourceTree = "<group>"; };
 		0625FBC61EF974E800F0C2CE /* Vision.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vision.storyboard; sourceTree = "<group>"; };
 		0625FBC81EF974F400F0C2CE /* VisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionViewController.swift; sourceTree = "<group>"; };
+		062A34251EFE2B0F00AF90E6 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		066391611EFE2581009AA024 /* LandmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksViewController.swift; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +162,14 @@
 			path = FaceDetection;
 			sourceTree = "<group>";
 		};
+		066391601EFE2569009AA024 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				066391611EFE2581009AA024 /* LandmarksViewController.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
 		06B51C6B1EF543DD00CA9279 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +214,7 @@
 		06B51C8B1EF547B700CA9279 /* Vision */ = {
 			isa = PBXGroup;
 			children = (
+				066391601EFE2569009AA024 /* Landmarks */,
 				0625FBC01EF9695700F0C2CE /* ObjectTracking */,
 				0625FBC51EF974C700F0C2CE /* FaceDetection */,
 				0625FBC61EF974E800F0C2CE /* Vision.storyboard */,
@@ -216,7 +226,7 @@
 		06B51C911EF5593300CA9279 /* CoreML */ = {
 			isa = PBXGroup;
 			children = (
-				062096081EF6DDD60019E369 /* Inceptionv3.mlmodel */,
+				062A34251EFE2B0F00AF90E6 /* Inceptionv3.mlmodel */,
 				06B51C921EF5596F00CA9279 /* CoreML.storyboard */,
 				06B51C941EF5597900CA9279 /* CoreMLViewController.swift */,
 				06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */,
@@ -380,7 +390,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				062096091EF6DDE50019E369 /* Inceptionv3.mlmodel in Sources */,
 				06B51C8F1EF547D400CA9279 /* FaceDetectionViewController.swift in Sources */,
 				0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */,
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
@@ -396,6 +405,7 @@
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 				0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */,
+				066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,11 @@ class VisionViewController: UITableViewController {
                                Example(title: "🔬 Object Tracking",
                                        description: "Track object with camera",
                                        storyboardName: "Vision",
-                                       controllerID: "ObjectTracking")]
+                                       controllerID: "ObjectTracking"),
+                               Example(title: "🤥 Landmarks",
+                                       description: "",
+                                       storyboardName: "Vision",
+                                       controllerID: "Landmarks")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
