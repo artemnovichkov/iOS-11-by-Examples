@@ -19,6 +19,8 @@
 		0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0625FBC81EF974F400F0C2CE /* VisionViewController.swift */; };
 		063BA9A31F001F8500121A57 /* Fision+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9A21F001F8500121A57 /* Fision+Extensions.swift */; };
 		063BA9A51F001FA000121A57 /* LandmarksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9A41F001FA000121A57 /* LandmarksService.swift */; };
+		063BA9A71F0023B000121A57 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9A61F0023B000121A57 /* Face.swift */; };
+		063BA9A91F0024DE00121A57 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9A81F0024DE00121A57 /* SwitchTableViewCell.swift */; };
 		066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066391611EFE2581009AA024 /* LandmarksViewController.swift */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
@@ -80,6 +82,8 @@
 		062A34251EFE2B0F00AF90E6 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		063BA9A21F001F8500121A57 /* Fision+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fision+Extensions.swift"; sourceTree = "<group>"; };
 		063BA9A41F001FA000121A57 /* LandmarksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksService.swift; sourceTree = "<group>"; };
+		063BA9A61F0023B000121A57 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		063BA9A81F0024DE00121A57 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		066391611EFE2581009AA024 /* LandmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksViewController.swift; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +176,8 @@
 				066391611EFE2581009AA024 /* LandmarksViewController.swift */,
 				063BA9A21F001F8500121A57 /* Fision+Extensions.swift */,
 				063BA9A41F001FA000121A57 /* LandmarksService.swift */,
+				063BA9A61F0023B000121A57 /* Face.swift */,
+				063BA9A81F0024DE00121A57 /* SwitchTableViewCell.swift */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063BA9A71F0023B000121A57 /* Face.swift in Sources */,
 				06B51C8F1EF547D400CA9279 /* FaceDetectionViewController.swift in Sources */,
 				0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */,
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
@@ -412,6 +419,7 @@
 				0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */,
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
+				063BA9A91F0024DE00121A57 /* SwitchTableViewCell.swift in Sources */,
 				0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */,
 				066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */,
 			);

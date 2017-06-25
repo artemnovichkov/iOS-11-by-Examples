@@ -9,12 +9,25 @@
 import UIKit
 import Vision
 
+struct LandmarkLine {
+    var description: String
+    var layer: CAShapeLayer
+}
+
 class LandmarksViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var lines = [LandmarkLine]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.tableFooterView = UIView()
         let image = #imageLiteral(resourceName: "face")
         imageView.image = image
         let service = LandmarksService()
@@ -36,15 +49,20 @@ class LandmarksViewController: UIViewController {
             boundingBoxLayer.strokeColor = UIColor.red.cgColor
             imageView.layer.addSublayer(boundingBoxLayer)
             
-            face.landmarks.forEach { landmark in
+            let lines: [LandmarkLine] = face.landmarks.map { landmark in
                 let points = landmark.points.map { point in
                     return CGPoint(x: face.rect.minX + point.x * face.rect.width,
                                    y: face.rect.minY + (1 - point.y) * face.rect.height)
                 }
                 
                 let layer = self.layer(withPoints: points)
-                imageView.layer.addSublayer(layer)
+                return LandmarkLine(description: landmark.type.rawValue,
+                                    layer: layer)
             }
+            lines.forEach { line in
+                imageView.layer.addSublayer(line.layer)
+            }
+            self.lines = lines
         }
     }
     
@@ -52,6 +70,7 @@ class LandmarksViewController: UIViewController {
         let layer = CAShapeLayer()
         layer.fillColor = nil
         layer.strokeColor = UIColor.red.cgColor
+        layer.lineWidth = 2
         let path = UIBezierPath()
         path.move(to: points.first!)
         points.forEach { point in
@@ -62,29 +81,18 @@ class LandmarksViewController: UIViewController {
     }
 }
 
-struct Face {
+extension LandmarksViewController: UITableViewDataSource {
     
-    let rect: CGRect
-    let landmarks: [Landmark]
-}
-
-struct Landmark {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return lines.count
+    }
     
-    let type: LandmarkType
-    let points: [CGPoint]
-    
-    enum LandmarkType {
-        case faceContour
-        case leftEye
-        case rightEye
-        case leftEyebrow
-        case rightEyebrow
-        case nose
-        case noseCrest
-        case medianLine
-        case outerLips
-        case innerLips
-        case leftPupil
-        case rightPupil
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "SwitchCell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SwitchTableViewCell
+        
+        cell.line = lines[indexPath.row]
+        
+        return cell
     }
 }

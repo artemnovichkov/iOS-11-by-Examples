@@ -128,20 +128,70 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xws-yg-OLQ">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xws-yg-OLQ" secondAttribute="height" multiplier="1:1" id="XBc-9K-oUu"/>
+                                </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="250-a0-vo7">
+                                <rect key="frame" x="0.0" y="395" width="375" height="272"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SwitchCell" id="Yuq-el-QQt" customClass="SwitchTableViewCell" customModule="iOS_11_by_Examples" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yuq-el-QQt" id="iE6-gO-VPI">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWc-Oi-6c3">
+                                                    <rect key="frame" x="318" y="6" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="valueChanged:" destination="Yuq-el-QQt" eventType="valueChanged" id="he9-2B-1BL"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d12-8B-vTl">
+                                                    <rect key="frame" x="8" y="0.0" width="302" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="d12-8B-vTl" firstAttribute="leading" secondItem="iE6-gO-VPI" secondAttribute="leading" constant="8" id="4EB-xF-Tos"/>
+                                                <constraint firstAttribute="trailing" secondItem="OWc-Oi-6c3" secondAttribute="trailing" constant="8" id="BVW-ih-hCM"/>
+                                                <constraint firstItem="d12-8B-vTl" firstAttribute="top" secondItem="iE6-gO-VPI" secondAttribute="top" id="MSF-Id-Pb1"/>
+                                                <constraint firstAttribute="bottom" secondItem="d12-8B-vTl" secondAttribute="bottom" id="VGf-sk-s48"/>
+                                                <constraint firstItem="OWc-Oi-6c3" firstAttribute="leading" secondItem="d12-8B-vTl" secondAttribute="trailing" constant="8" id="nIl-Up-apx"/>
+                                                <constraint firstItem="OWc-Oi-6c3" firstAttribute="centerY" secondItem="iE6-gO-VPI" secondAttribute="centerY" id="oLt-PI-WVE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="switch" destination="OWc-Oi-6c3" id="Ilz-JP-c7u"/>
+                                            <outlet property="titleLabel" destination="d12-8B-vTl" id="3gS-a9-gsA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="FfL-SP-ztv" id="6fu-Dw-yvW"/>
+                                    <outlet property="delegate" destination="FfL-SP-ztv" id="dFE-Nj-db3"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Xws-yg-OLQ" secondAttribute="trailing" id="4xY-b3-JWP"/>
-                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="top" secondItem="qO4-BN-bKW" secondAttribute="bottom" constant="125.5" id="KEM-Ro-zfb"/>
-                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="leading" secondItem="4MP-bG-vNt" secondAttribute="leading" id="Szq-5o-CNt"/>
-                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="top" secondItem="qO4-BN-bKW" secondAttribute="bottom" id="lET-lr-rWw"/>
-                            <constraint firstItem="rVe-ta-aIt" firstAttribute="top" secondItem="Xws-yg-OLQ" secondAttribute="bottom" id="v0t-fd-L53"/>
+                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="top" secondItem="qO4-BN-bKW" secondAttribute="bottom" id="0hu-5H-Kzv"/>
+                            <constraint firstItem="250-a0-vo7" firstAttribute="top" secondItem="Xws-yg-OLQ" secondAttribute="bottom" id="21E-U9-V6f"/>
+                            <constraint firstItem="250-a0-vo7" firstAttribute="leading" secondItem="4MP-bG-vNt" secondAttribute="leading" id="BZt-p8-rry"/>
+                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="leading" secondItem="4MP-bG-vNt" secondAttribute="leading" id="TbV-G8-bqd"/>
+                            <constraint firstAttribute="trailing" secondItem="250-a0-vo7" secondAttribute="trailing" id="sm9-ZV-yV1"/>
+                            <constraint firstAttribute="trailing" secondItem="Xws-yg-OLQ" secondAttribute="trailing" id="soE-n7-5lW"/>
+                            <constraint firstItem="rVe-ta-aIt" firstAttribute="top" secondItem="250-a0-vo7" secondAttribute="bottom" id="uez-Cb-0dM"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Xws-yg-OLQ" id="jgc-a4-ZaQ"/>
+                        <outlet property="tableView" destination="250-a0-vo7" id="xKk-Xe-G2o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p2y-GW-xm8" userLabel="First Responder" sceneMemberID="firstResponder"/>
