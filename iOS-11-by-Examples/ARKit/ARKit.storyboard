@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="hSF-R1-P4b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hSF-R1-P4b">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Kit View Controller-->
         <scene sceneID="OK6-gt-HUC">
             <objects>
-                <viewController id="hSF-R1-P4b" customClass="ARKitViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DW4-89-eP4"/>
-                        <viewControllerLayoutGuide type="bottom" id="hhz-0x-c3H"/>
-                    </layoutGuides>
+                <viewController id="hSF-R1-P4b" customClass="ARKitViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DsM-uk-z7Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,10 +24,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1Ku-m9-zdI" firstAttribute="top" secondItem="DsM-uk-z7Q" secondAttribute="top" id="OHw-fr-UjV"/>
-                            <constraint firstItem="1Ku-m9-zdI" firstAttribute="leading" secondItem="DsM-uk-z7Q" secondAttribute="leading" id="SaC-l3-m4S"/>
-                            <constraint firstItem="hhz-0x-c3H" firstAttribute="top" secondItem="1Ku-m9-zdI" secondAttribute="bottom" id="cMm-BC-z6A"/>
-                            <constraint firstAttribute="trailing" secondItem="1Ku-m9-zdI" secondAttribute="trailing" id="hdW-Su-afS"/>
+                            <constraint firstItem="1Ku-m9-zdI" firstAttribute="leading" secondItem="QTr-7S-UDw" secondAttribute="leading" id="SaC-l3-m4S"/>
+                            <constraint firstItem="QTr-7S-UDw" firstAttribute="bottom" secondItem="1Ku-m9-zdI" secondAttribute="bottom" id="cMm-BC-z6A"/>
+                            <constraint firstItem="QTr-7S-UDw" firstAttribute="trailing" secondItem="1Ku-m9-zdI" secondAttribute="trailing" id="hdW-Su-afS"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="QTr-7S-UDw"/>
                     </view>
                     <connections>
                         <outlet property="sceneView" destination="1Ku-m9-zdI" id="QiD-5r-BFW"/>

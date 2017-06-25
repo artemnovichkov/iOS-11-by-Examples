@@ -21,21 +21,22 @@ class CoreMLViewController: UIViewController {
     func process(_ image: UIImage) {
         imageView.image = image
         
-//        guard let pixelBuffer = image.pixelBuffer else {
-//            return
-//        }
-//        let model = Inceptionv3()
-//        do {
-//            let output = try model.prediction(image: pixelBuffer)
-//            let probs = output.classLabelProbs.sorted { $0.value > $1.value }
-//            if let prob = probs.first {
-//                label.text = "\(prob.key) \(prob.value)"
-//            }
-//        }
-//        catch {
-//            self.presentAlertController(withTitle: title,
-//                                        message: error.localizedDescription)
-//        }
+        guard let pixelBuffer = image.pixelBuffer else {
+            return
+        }
+        //I have `Use of unresolved identifier 'Inceptionv3'` error here when I use New Build System (File > Project Settings)   ¯\_(ツ)_/¯
+        let model = Inceptionv3()
+        do {
+            let output = try model.prediction(image: pixelBuffer)
+            let probs = output.classLabelProbs.sorted { $0.value > $1.value }
+            if let prob = probs.first {
+                label.text = "\(prob.key) \(prob.value)"
+            }
+        }
+        catch {
+            self.presentAlertController(withTitle: title,
+                                        message: error.localizedDescription)
+        }
     }
     
     @IBAction func buttonAction(_ sender: Any) {

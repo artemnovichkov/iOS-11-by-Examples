@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c85-uz-luL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c85-uz-luL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Identity Lookup View Controller-->
         <scene sceneID="hnW-88-Sox">
             <objects>
-                <viewController id="c85-uz-luL" customClass="IdentityLookupViewController" customModule="iOS_11_Sampler" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="T9G-Kk-zP0"/>
-                        <viewControllerLayoutGuide type="bottom" id="eim-C6-WC7"/>
-                    </layoutGuides>
+                <viewController id="c85-uz-luL" customClass="IdentityLookupViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eoE-FA-F6d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,11 +36,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vds-ak-Zjd" firstAttribute="centerX" secondItem="eoE-FA-F6d" secondAttribute="centerX" id="E0O-46-GAm"/>
+                            <constraint firstItem="vds-ak-Zjd" firstAttribute="centerX" secondItem="Ifo-bG-zhd" secondAttribute="centerX" id="E0O-46-GAm"/>
                             <constraint firstItem="zXA-vT-q7m" firstAttribute="top" secondItem="vds-ak-Zjd" secondAttribute="bottom" constant="8" id="NLp-tM-Ma5"/>
-                            <constraint firstItem="vds-ak-Zjd" firstAttribute="top" secondItem="T9G-Kk-zP0" secondAttribute="bottom" constant="16" id="Zay-D9-ru1"/>
-                            <constraint firstItem="zXA-vT-q7m" firstAttribute="centerX" secondItem="eoE-FA-F6d" secondAttribute="centerX" id="dp4-cC-y5o"/>
+                            <constraint firstItem="vds-ak-Zjd" firstAttribute="top" secondItem="Ifo-bG-zhd" secondAttribute="top" constant="16" id="Zay-D9-ru1"/>
+                            <constraint firstItem="zXA-vT-q7m" firstAttribute="centerX" secondItem="Ifo-bG-zhd" secondAttribute="centerX" id="dp4-cC-y5o"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ifo-bG-zhd"/>
                     </view>
                     <connections>
                         <outlet property="textField" destination="vds-ak-Zjd" id="cOl-La-mRh"/>
