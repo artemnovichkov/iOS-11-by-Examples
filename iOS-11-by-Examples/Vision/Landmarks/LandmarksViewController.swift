@@ -15,65 +15,40 @@ class LandmarksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let request = VNDetectFaceLandmarksRequest { [unowned self] request, error in
-            self.handle(request, error: error)
-        }
         let image = #imageLiteral(resourceName: "face")
         imageView.image = image
-        let handler = VNImageRequestHandler(cgImage: image.cgImage!, options: [:])
-        do {
-            try handler.perform([request])
-        } catch {
-            print(error)
+        let service = LandmarksService()
+        service.landmarks(forImage: image) { [unowned self] results in
+            switch results {
+            case .succes(let faces):
+                self.draw(faces)
+            case .error(let error):
+                print(error)
+            }
         }
     }
     
-    fileprivate func handle(_ request: VNRequest, error: Error?) {
-        if let error = error {
-            print(error)
-            return
-        }
-        guard let observations = request.results as? [VNFaceObservation] else {
-            return
-        }
-        
-        for observation in observations {
-            guard let landmarks = observation.landmarks else {
-                continue
-            }
-            
-            let faceRect = observation.boundingBox
-            let image = imageView.image!
-            let convertedFaceRect = CGRect(x: image.size.width * faceRect.origin.x,
-                                           y: image.size.height * (1 - faceRect.origin.y - faceRect.height),
-                                           width: image.size.width * faceRect.width,
-                                           height: image.size.height * faceRect.height)
-            
+    private func draw(_ faces: [Face]) {
+        faces.forEach { face in
             let boundingBoxLayer = CAShapeLayer()
-            boundingBoxLayer.path = UIBezierPath(rect: convertedFaceRect).cgPath
+            boundingBoxLayer.path = UIBezierPath(rect: face.rect).cgPath
             boundingBoxLayer.fillColor = nil
             boundingBoxLayer.strokeColor = UIColor.red.cgColor
             imageView.layer.addSublayer(boundingBoxLayer)
             
-            layers(for: landmarks.landmarkRegions, rect: convertedFaceRect).forEach { layer in
-                self.imageView.layer.addSublayer(layer)
+            face.landmarks.forEach { landmark in
+                let points = landmark.points.map { point in
+                    return CGPoint(x: face.rect.minX + point.x * face.rect.width,
+                                   y: face.rect.minY + (1 - point.y) * face.rect.height)
+                }
+                
+                let layer = self.layer(withPoints: points)
+                imageView.layer.addSublayer(layer)
             }
         }
     }
     
-    func layers(for regions: [VNFaceLandmarkRegion2D], rect: CGRect) -> [CAShapeLayer] {
-        return regions.map { region in
-            let points = region.points.map { point in
-                return CGPoint(x: rect.minX + point.x * rect.width,
-                               y: rect.minY + (1 - point.y) * rect.height)
-            }
-            
-            let layer = self.layer(withPoints: points)
-            return layer
-        }
-    }
-    
-    func layer(withPoints points: [CGPoint]) -> CAShapeLayer {
+    private func layer(withPoints points: [CGPoint]) -> CAShapeLayer {
         let layer = CAShapeLayer()
         layer.fillColor = nil
         layer.strokeColor = UIColor.red.cgColor
@@ -87,36 +62,29 @@ class LandmarksViewController: UIViewController {
     }
 }
 
-extension VNFaceLandmarks2D {
+struct Face {
     
-    var landmarkRegions: [VNFaceLandmarkRegion2D] {
-        var landmarkRegions = [VNFaceLandmarkRegion2D]()
-        if let faceContour = faceContour {
-            landmarkRegions.append(faceContour)
-        }
-        if let leftEye = leftEye {
-            landmarkRegions.append(leftEye)
-        }
-        if let rightEye = rightEye {
-            landmarkRegions.append(rightEye)
-        }
-        if let nose = nose {
-            landmarkRegions.append(nose)
-        }
-        if let outerLips = outerLips {
-            landmarkRegions.append(outerLips)
-        }
-        return landmarkRegions
-    }
+    let rect: CGRect
+    let landmarks: [Landmark]
 }
 
-extension VNFaceLandmarkRegion2D {
+struct Landmark {
     
-    var points: [CGPoint] {
-        return (0..<pointCount).map { index in
-            let point = self.point(at: index)
-            return CGPoint(x: CGFloat(point.x), y: CGFloat(point.y))
-        }
+    let type: LandmarkType
+    let points: [CGPoint]
+    
+    enum LandmarkType {
+        case faceContour
+        case leftEye
+        case rightEye
+        case leftEyebrow
+        case rightEyebrow
+        case nose
+        case noseCrest
+        case medianLine
+        case outerLips
+        case innerLips
+        case leftPupil
+        case rightPupil
     }
 }
-
