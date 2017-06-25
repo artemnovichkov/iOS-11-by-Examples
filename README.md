@@ -19,6 +19,10 @@ Image classification demo using Core ML framework. Show description of an object
 
 <img src="resources/vision-face-detection-example.jpeg" width="200">
 
+- Face landmarks. An image analysis that finds facial features (such as the eyes and mouth) in an image.
+
+<img src="resources/vision-landmarks-example.jpeg" width="200">
+
 - Object tracking. Track any object using camera.
 
 <img src="resources/vision-object-tracking-example.jpeg" width="200">

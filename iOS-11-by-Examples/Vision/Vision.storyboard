@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FfL-SP-ztv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uMW-Ne-VVg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,14 +58,11 @@
         <scene sceneID="9Dw-9l-EIG">
             <objects>
                 <viewController storyboardIdentifier="ObjectTracking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m9F-Kt-ECC" customClass="ObjectTrackingViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ah6-Nh-cDc"/>
-                        <viewControllerLayoutGuide type="bottom" id="K57-E7-ewr"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vr4-39-j59">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="eRb-mE-zAs"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X6W-di-KYi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,10 +73,6 @@
         <scene sceneID="01I-Tc-psJ">
             <objects>
                 <viewController storyboardIdentifier="FaceDetection" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KDY-8N-3QH" customClass="FaceDetectionViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="a1o-q2-OL3"/>
-                        <viewControllerLayoutGuide type="bottom" id="jVr-8e-wgn"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="v9v-Kf-u7t">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,12 +93,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="jVr-8e-wgn" firstAttribute="top" secondItem="hSW-FR-Byh" secondAttribute="bottom" constant="20" id="Faf-6Q-mMp"/>
-                            <constraint firstItem="hSW-FR-Byh" firstAttribute="centerX" secondItem="v9v-Kf-u7t" secondAttribute="centerX" id="Ycp-Ym-dlW"/>
-                            <constraint firstItem="h7R-a5-F76" firstAttribute="leading" secondItem="v9v-Kf-u7t" secondAttribute="leading" id="cZS-Zg-31A"/>
+                            <constraint firstItem="67g-Jk-SEm" firstAttribute="bottom" secondItem="hSW-FR-Byh" secondAttribute="bottom" constant="20" id="Faf-6Q-mMp"/>
+                            <constraint firstItem="hSW-FR-Byh" firstAttribute="centerX" secondItem="67g-Jk-SEm" secondAttribute="centerX" id="Ycp-Ym-dlW"/>
+                            <constraint firstItem="h7R-a5-F76" firstAttribute="leading" secondItem="67g-Jk-SEm" secondAttribute="leading" id="cZS-Zg-31A"/>
                             <constraint firstItem="h7R-a5-F76" firstAttribute="centerY" secondItem="v9v-Kf-u7t" secondAttribute="centerY" id="d6n-Ct-c0W"/>
-                            <constraint firstAttribute="trailing" secondItem="h7R-a5-F76" secondAttribute="trailing" id="zuQ-DU-MKB"/>
+                            <constraint firstItem="67g-Jk-SEm" firstAttribute="trailing" secondItem="h7R-a5-F76" secondAttribute="trailing" id="zuQ-DU-MKB"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="67g-Jk-SEm"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -119,10 +114,6 @@
         <scene sceneID="W0R-aB-hpB">
             <objects>
                 <viewController storyboardIdentifier="Landmarks" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FfL-SP-ztv" customClass="LandmarksViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qO4-BN-bKW"/>
-                        <viewControllerLayoutGuide type="bottom" id="rVe-ta-aIt"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4MP-bG-vNt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,14 +171,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="top" secondItem="qO4-BN-bKW" secondAttribute="bottom" id="0hu-5H-Kzv"/>
+                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="top" secondItem="lKE-mA-P2x" secondAttribute="top" id="0hu-5H-Kzv"/>
                             <constraint firstItem="250-a0-vo7" firstAttribute="top" secondItem="Xws-yg-OLQ" secondAttribute="bottom" id="21E-U9-V6f"/>
-                            <constraint firstItem="250-a0-vo7" firstAttribute="leading" secondItem="4MP-bG-vNt" secondAttribute="leading" id="BZt-p8-rry"/>
-                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="leading" secondItem="4MP-bG-vNt" secondAttribute="leading" id="TbV-G8-bqd"/>
-                            <constraint firstAttribute="trailing" secondItem="250-a0-vo7" secondAttribute="trailing" id="sm9-ZV-yV1"/>
-                            <constraint firstAttribute="trailing" secondItem="Xws-yg-OLQ" secondAttribute="trailing" id="soE-n7-5lW"/>
-                            <constraint firstItem="rVe-ta-aIt" firstAttribute="top" secondItem="250-a0-vo7" secondAttribute="bottom" id="uez-Cb-0dM"/>
+                            <constraint firstItem="250-a0-vo7" firstAttribute="leading" secondItem="lKE-mA-P2x" secondAttribute="leading" id="BZt-p8-rry"/>
+                            <constraint firstItem="Xws-yg-OLQ" firstAttribute="leading" secondItem="lKE-mA-P2x" secondAttribute="leading" id="TbV-G8-bqd"/>
+                            <constraint firstItem="lKE-mA-P2x" firstAttribute="trailing" secondItem="250-a0-vo7" secondAttribute="trailing" id="sm9-ZV-yV1"/>
+                            <constraint firstItem="lKE-mA-P2x" firstAttribute="trailing" secondItem="Xws-yg-OLQ" secondAttribute="trailing" id="soE-n7-5lW"/>
+                            <constraint firstItem="lKE-mA-P2x" firstAttribute="bottom" secondItem="250-a0-vo7" secondAttribute="bottom" id="uez-Cb-0dM"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="lKE-mA-P2x"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Xws-yg-OLQ" id="jgc-a4-ZaQ"/>

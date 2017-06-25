@@ -19,7 +19,7 @@ class VisionViewController: UITableViewController {
                                        storyboardName: "Vision",
                                        controllerID: "ObjectTracking"),
                                Example(title: "🤥 Landmarks",
-                                       description: "",
+                                       description: "Detects face features on photo",
                                        storyboardName: "Vision",
                                        controllerID: "Landmarks")]
     
