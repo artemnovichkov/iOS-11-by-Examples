@@ -58,3 +58,7 @@ List of online sources which have mentioned iOS 11 by Examples:
 ## Author
 
 Artem Novichkov, novichkoff93@gmail.com
+
+## License
+
+iOS 11 by Examples is available under the MIT license. See the LICENSE file for more info.
