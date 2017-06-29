@@ -14,6 +14,7 @@
         <scene sceneID="BS2-eL-m2m">
             <objects>
                 <viewController id="apJ-hm-0ms" customClass="CoreMLViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides/>
                     <view key="view" contentMode="scaleToFill" id="B6F-Ji-ng8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,8 +32,8 @@
                                     <action selector="buttonAction:" destination="apJ-hm-0ms" eventType="touchUpInside" id="sM2-4y-qA9"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTI-NP-1j8">
-                                <rect key="frame" x="187.5" y="441" width="0.0" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTI-NP-1j8">
+                                <rect key="frame" x="10" y="441" width="355" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +47,9 @@
                             <constraint firstItem="Ya5-8h-f2b" firstAttribute="top" secondItem="Uix-Zd-8CD" secondAttribute="bottom" constant="8" id="Tlg-yq-0Bs"/>
                             <constraint firstItem="Uix-Zd-8CD" firstAttribute="leading" secondItem="vAm-nh-v8z" secondAttribute="leading" id="c9T-6y-vT9"/>
                             <constraint firstItem="HTI-NP-1j8" firstAttribute="top" secondItem="Ya5-8h-f2b" secondAttribute="bottom" constant="8" id="dZY-jV-dgg"/>
+                            <constraint firstItem="HTI-NP-1j8" firstAttribute="leading" secondItem="B6F-Ji-ng8" secondAttribute="leading" constant="10" id="h8T-5L-F0x"/>
                             <constraint firstItem="vAm-nh-v8z" firstAttribute="trailing" secondItem="Uix-Zd-8CD" secondAttribute="trailing" id="vt2-Ix-slR"/>
+                            <constraint firstAttribute="trailing" secondItem="HTI-NP-1j8" secondAttribute="trailing" constant="10" id="wmL-En-wYs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vAm-nh-v8z"/>
                     </view>
