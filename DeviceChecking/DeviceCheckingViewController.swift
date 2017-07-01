@@ -13,6 +13,7 @@ class DeviceCheckingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         
         DCDevice.current.generateToken { data, error in
             print(data ?? "No data")
