@@ -49,6 +49,8 @@ SMS and MMS filtering using IdentityLookup framework. Don't forget to turn on an
 
 Identifying devices that have already taken advantage of a promotional offer that you provide, or flagging a device that you have determined to be fraudulent.
 
+**Note**: select DeviceChecking scheme and run.
+
 ## Blogs/Newsletter
 List of online sources which have mentioned iOS 11 by Examples: 
 
