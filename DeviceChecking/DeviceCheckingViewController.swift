@@ -1,5 +1,5 @@
 //
-//  DeviceCheckViewController.swift
+//  DeviceCheckingViewController.swift
 //  iOS-11-by-Examples
 //
 //  Created by Artem Novichkov on 18/06/2017.
@@ -9,7 +9,7 @@
 import UIKit
 import DeviceCheck
 
-class DeviceCheckViewController: UIViewController {
+class DeviceCheckingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -50,8 +50,5 @@ struct DataSource {
                                             storyboardName: "CoreNFC"),
                                     Example(title: "✉️ IdentityLookup",
                                             description: "Filter unwanted SMS and MMS messages",
-                                            storyboardName: "IdentityLookup"),
-                                    Example(title: "📱 DeviceCheck",
-                                            description: "Generating unique per-device or per-user identifier",
-                                            storyboardName: "DeviceCheck")]
+                                            storyboardName: "IdentityLookup")]
 }
