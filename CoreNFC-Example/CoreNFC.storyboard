@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ir1-7E-FOB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--🔖 Core NFC-->
+        <scene sceneID="WZK-TY-hQh">
+            <objects>
+                <tableViewController id="Z3S-KH-ogG" customClass="CoreNFCViewController" customModule="CoreNFC_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nN2-zv-ZX1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="XQR-C5-0mG" customClass="PayloadTableViewCell" customModule="CoreNFC_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XQR-C5-0mG" id="rYQ-pz-f0H">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ixS-yS-B8e">
+                                            <rect key="frame" x="8" y="8" width="359" height="35.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ixS-yS-B8e" firstAttribute="top" secondItem="rYQ-pz-f0H" secondAttribute="top" constant="8" id="QGk-zz-nON"/>
+                                        <constraint firstAttribute="trailing" secondItem="ixS-yS-B8e" secondAttribute="trailing" constant="8" id="Urr-LC-Rxl"/>
+                                        <constraint firstAttribute="bottom" secondItem="ixS-yS-B8e" secondAttribute="bottom" id="etW-2t-q8N"/>
+                                        <constraint firstItem="ixS-yS-B8e" firstAttribute="leading" secondItem="rYQ-pz-f0H" secondAttribute="leading" constant="8" id="oeg-0u-KPN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="ixS-yS-B8e" id="xKi-3f-YeP"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Z3S-KH-ogG" id="FtZ-0H-ZTX"/>
+                            <outlet property="delegate" destination="Z3S-KH-ogG" id="N89-re-Ke2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="🔖 Core NFC" id="e98-y6-e9q">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="Bfk-d8-yIL">
+                            <connections>
+                                <action selector="scanAction:" destination="Z3S-KH-ogG" id="ncc-Gb-ZLC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YGz-Jz-43l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="143.47826086956522"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0QQ-k8-iwO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ir1-7E-FOB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cDm-qg-PwX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Z3S-KH-ogG" kind="relationship" relationship="rootViewController" id="sEe-bx-MLI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ld9-mt-h0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-383" y="143"/>
+        </scene>
+    </scenes>
+</document>

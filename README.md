@@ -37,6 +37,8 @@ Augmented reality experiences in your app or game.
 
 Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site. Since Xcode 9 beta 2 Core NFC can now be enabled via the Capabilities tab in Xcode.
 
+**Note**: select CoreNFC-Example scheme and run.
+
 <img src="resources/corenfc-example.jpeg" width="200"> <img src="resources/corenfc-example-2.jpeg" width="200">
 
 ### [IdentityLookup](https://developer.apple.com/documentation/identitylookup)

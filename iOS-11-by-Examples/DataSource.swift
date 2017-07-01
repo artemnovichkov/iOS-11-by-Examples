@@ -45,9 +45,6 @@ struct DataSource {
                                     Example(title: "🚀 ARKit",
                                             description: "Augmented reality experiences in your app or game",
                                             storyboardName: "ARKit"),
-                                    Example(title: "🔖 Core NFC",
-                                            description: "Reading of NFC tags",
-                                            storyboardName: "CoreNFC"),
                                     Example(title: "✉️ IdentityLookup",
                                             description: "Filter unwanted SMS and MMS messages",
                                             storyboardName: "IdentityLookup")]
