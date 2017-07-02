@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6x7-wV-qy1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Core Image Filters View Controller-->
+        <scene sceneID="wfD-nx-Vq3">
+            <objects>
+                <viewController id="6x7-wV-qy1" customClass="CoreImageFiltersViewController" customModule="iOS_11_by_Examples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MOU-h3-vxk"/>
+                        <viewControllerLayoutGuide type="bottom" id="gtK-Ce-h9u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="636-HZ-1U4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xca-3N-zMg">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7HU-oM-1gV">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="o7i-o1-gX3">
+                                <rect key="frame" x="177" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o7i-o1-gX3" firstAttribute="centerY" secondItem="636-HZ-1U4" secondAttribute="centerY" id="6P6-3l-rZf"/>
+                            <constraint firstItem="gtK-Ce-h9u" firstAttribute="top" secondItem="Xca-3N-zMg" secondAttribute="bottom" id="BGQ-dE-sv8"/>
+                            <constraint firstItem="7HU-oM-1gV" firstAttribute="top" secondItem="636-HZ-1U4" secondAttribute="top" id="DTT-5f-II9"/>
+                            <constraint firstItem="o7i-o1-gX3" firstAttribute="centerX" secondItem="636-HZ-1U4" secondAttribute="centerX" id="I5B-kz-tdE"/>
+                            <constraint firstItem="Xca-3N-zMg" firstAttribute="leading" secondItem="636-HZ-1U4" secondAttribute="leading" id="RPT-Qu-J2t"/>
+                            <constraint firstAttribute="trailing" secondItem="Xca-3N-zMg" secondAttribute="trailing" id="Rp3-FP-VJ1"/>
+                            <constraint firstItem="Xca-3N-zMg" firstAttribute="top" secondItem="7HU-oM-1gV" secondAttribute="bottom" constant="8" id="bRL-Bu-763"/>
+                            <constraint firstItem="7HU-oM-1gV" firstAttribute="leading" secondItem="636-HZ-1U4" secondAttribute="leading" id="jc8-aR-YAc"/>
+                            <constraint firstAttribute="trailing" secondItem="7HU-oM-1gV" secondAttribute="trailing" id="lee-uA-HIs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="o7i-o1-gX3" id="Bbh-eI-JKz"/>
+                        <outlet property="imageView" destination="7HU-oM-1gV" id="f9X-X8-lk8"/>
+                        <outlet property="pickerView" destination="Xca-3N-zMg" id="8Bd-db-q7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXk-JD-1eY" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="-46"/>
+        </scene>
+    </scenes>
+</document>

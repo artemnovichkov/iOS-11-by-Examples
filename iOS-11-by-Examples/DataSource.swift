@@ -47,5 +47,8 @@ struct DataSource {
                                             storyboardName: "ARKit"),
                                     Example(title: "✉️ IdentityLookup",
                                             description: "Filter unwanted SMS and MMS messages",
-                                            storyboardName: "IdentityLookup")]
+                                            storyboardName: "IdentityLookup"),
+                                    Example(title: "🌄 Core Image Filters",
+                                            description: "New filters for image processing",
+                                            storyboardName: "CoreImageFilters")]
 }

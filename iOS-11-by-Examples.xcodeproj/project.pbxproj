@@ -22,6 +22,8 @@
 		063BA9A71F0023B000121A57 /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9A61F0023B000121A57 /* Face.swift */; };
 		063BA9A91F0024DE00121A57 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9A81F0024DE00121A57 /* SwitchTableViewCell.swift */; };
 		063BA9AB1F002D2D00121A57 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 063BA9AA1F002D2D00121A57 /* Inceptionv3.mlmodel */; };
+		063D6C961F08F72C00272032 /* CoreImageFiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D6C951F08F72C00272032 /* CoreImageFiltersViewController.swift */; };
+		063D6C981F08F73500272032 /* CoreImageFilters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063D6C971F08F73500272032 /* CoreImageFilters.storyboard */; };
 		066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066391611EFE2581009AA024 /* LandmarksViewController.swift */; };
 		066C1B2E1F074D2D00A151F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066C1B2D1F074D2D00A151F4 /* AppDelegate.swift */; };
 		066C1B331F074D2D00A151F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066C1B311F074D2D00A151F4 /* Main.storyboard */; };
@@ -95,6 +97,8 @@
 		063BA9A61F0023B000121A57 /* Face.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
 		063BA9A81F0024DE00121A57 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 		063BA9AA1F002D2D00121A57 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		063D6C951F08F72C00272032 /* CoreImageFiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageFiltersViewController.swift; sourceTree = "<group>"; };
+		063D6C971F08F73500272032 /* CoreImageFilters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreImageFilters.storyboard; sourceTree = "<group>"; };
 		066391611EFE2581009AA024 /* LandmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksViewController.swift; sourceTree = "<group>"; };
 		066C1B2B1F074D2D00A151F4 /* DeviceChecking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceChecking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		066C1B2D1F074D2D00A151F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +213,15 @@
 			path = FaceDetection;
 			sourceTree = "<group>";
 		};
+		063D6C941F08F70D00272032 /* Core Image Filters */ = {
+			isa = PBXGroup;
+			children = (
+				063D6C951F08F72C00272032 /* CoreImageFiltersViewController.swift */,
+				063D6C971F08F73500272032 /* CoreImageFilters.storyboard */,
+			);
+			path = "Core Image Filters";
+			sourceTree = "<group>";
+		};
 		066391601EFE2569009AA024 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +288,7 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-by-Examples */ = {
 			isa = PBXGroup;
 			children = (
+				063D6C941F08F70D00272032 /* Core Image Filters */,
 				0620960B1EF75A6D0019E369 /* Common */,
 				06F9D6421EF6B01500E0A4FB /* ARKit */,
 				06ED736B1EF65BFC0060456F /* CoreNFC */,
@@ -506,6 +520,7 @@
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
 				06B51C7F1EF543DD00CA9279 /* Assets.xcassets in Resources */,
+				063D6C981F08F73500272032 /* CoreImageFilters.storyboard in Resources */,
 				0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */,
 				060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */,
 				06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */,
@@ -567,6 +582,7 @@
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 				063BA9A91F0024DE00121A57 /* SwitchTableViewCell.swift in Sources */,
+				063D6C961F08F72C00272032 /* CoreImageFiltersViewController.swift in Sources */,
 				0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */,
 				066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */,
 			);
@@ -864,6 +880,7 @@
 				066C1B3C1F074D2D00A151F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		066C1B521F074F8300A151F4 /* Build configuration list for PBXNativeTarget "CoreNFC-Example" */ = {
 			isa = XCConfigurationList;
@@ -872,6 +889,7 @@
 				066C1B541F074F8300A151F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-by-Examples" */ = {
 			isa = XCConfigurationList;
