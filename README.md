@@ -5,7 +5,15 @@ Code examples for new APIs of iOS 11.
 
 **Note**: The project requires Xcode 9 Beta 1 or later, Swift 4 and iOS 11.
 
-## Contents
+## Table of contents
+
+- [Core ML](#core-ml)
+- [Vision](#vision)
+- [ARKit](#arkit)
+- [Core NFC](#core-nfc)
+- [IdentityLookup](#identitylookup)
+- [DeviceCheck](#devicecheck)
+- [Blogs/Newsletter](#blogsnewsletter)
 
 ### [Core ML](https://developer.apple.com/documentation/coreml)
 
@@ -53,7 +61,7 @@ Identifying devices that have already taken advantage of a promotional offer tha
 
 **Note**: select DeviceChecking scheme and run.
 
-## Blogs/Newsletter
+### Blogs/Newsletter
 List of online sources which have mentioned iOS 11 by Examples: 
 
 - [Digest MBLTDEV - issue #123](http://digest.mbltdev.ru/digests/146)
