@@ -22,8 +22,6 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NFCReaderUsageDescription</key>
-	<string>NFC tags</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Take a photo</string>
 	<key>NSPhotoLibraryUsageDescription</key>
@@ -35,7 +33,6 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
-		<string>nfc</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
