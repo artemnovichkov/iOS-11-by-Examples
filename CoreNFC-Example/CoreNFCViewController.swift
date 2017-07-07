@@ -18,12 +18,12 @@ class CoreNFCViewController: UITableViewController {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
         navigationController?.navigationBar.prefersLargeTitles = true
-        session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
     }
     
     // MARK: - Actions
     
     @IBAction func scanAction(_ sender: Any) {
+        session = NFCNDEFReaderSession(delegate: self, queue: DispatchQueue.main, invalidateAfterFirstRead: true)
         session?.begin()
     }
 }
