@@ -45,7 +45,7 @@ Augmented reality experiences in your app or game.
 
 Easy way to move content.
 
-<img src="resources/drag-and-drop-example.jpeg" width="200">
+<img src="resources/drag-and-drop-example.gif" width="200">
 
 ### [Core NFC](https://developer.apple.com/documentation/corenfc)
 
