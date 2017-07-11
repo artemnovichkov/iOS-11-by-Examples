@@ -38,6 +38,7 @@
 		067D6D291F14FE6500092051 /* DragAndDrop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067D6D281F14FE6500092051 /* DragAndDrop.storyboard */; };
 		067D6D2B1F14FF0D00092051 /* DragAndDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D6D2A1F14FF0D00092051 /* DragAndDropViewController.swift */; };
 		067D6D2D1F14FF7E00092051 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D6D2C1F14FF7E00092051 /* ImagesViewController.swift */; };
+		067D6D2F1F15035C00092051 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D6D2E1F15035C00092051 /* ImageTableViewCell.swift */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
@@ -118,6 +119,7 @@
 		067D6D281F14FE6500092051 /* DragAndDrop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DragAndDrop.storyboard; sourceTree = "<group>"; };
 		067D6D2A1F14FF0D00092051 /* DragAndDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropViewController.swift; sourceTree = "<group>"; };
 		067D6D2C1F14FF7E00092051 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		067D6D2E1F15035C00092051 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				067D6D281F14FE6500092051 /* DragAndDrop.storyboard */,
 				067D6D2A1F14FF0D00092051 /* DragAndDropViewController.swift */,
 				067D6D2C1F14FF7E00092051 /* ImagesViewController.swift */,
+				067D6D2E1F15035C00092051 /* ImageTableViewCell.swift */,
 			);
 			path = "Drag-n-Drop";
 			sourceTree = "<group>";
@@ -573,6 +576,7 @@
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */,
+				067D6D2F1F15035C00092051 /* ImageTableViewCell.swift in Sources */,
 				063BA9A51F001FA000121A57 /* LandmarksService.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,

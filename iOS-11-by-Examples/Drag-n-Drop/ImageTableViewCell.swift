@@ -1,0 +1,32 @@
+//
+//  ImageTableViewCell.swift
+//  iOS-11-by-Examples
+//
+//  Created by Artem Novichkov on 11/07/2017.
+//  Copyright © 2017 Artem Novichkov. All rights reserved.
+//
+
+import UIKit
+
+class ImageTableViewCell: UITableViewCell {
+    
+    let mainImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        contentView.addSubview(mainImageView)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        mainImageView.frame = contentView.bounds
+    }
+}
