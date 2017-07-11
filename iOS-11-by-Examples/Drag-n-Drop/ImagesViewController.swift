@@ -45,6 +45,17 @@ extension ImagesViewController: UITableViewDragDelegate {
         return dragItems(forRow: indexPath.row)
     }
     
+    func tableView(_ tableView: UITableView, dragPreviewParametersForRowAt indexPath: IndexPath) -> UIDragPreviewParameters? {
+        let parameters = UIDragPreviewParameters()
+        let rect = CGRect(x: 0,
+                          y: 0,
+                          width: tableView.bounds.width,
+                          height: tableView.bounds.width)
+        parameters.visiblePath = UIBezierPath(roundedRect: rect,
+                                              cornerRadius: 15)
+        return parameters
+    }
+    
     private func dragItems(forRow row: Int) -> [UIDragItem] {
         let image = images[row]
         let itemProvider = NSItemProvider(object: image)
