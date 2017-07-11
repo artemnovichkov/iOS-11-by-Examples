@@ -38,15 +38,15 @@ final class ImagesViewController: UITableViewController {
 extension ImagesViewController: UITableViewDragDelegate {
     
     func tableView(_ tableView: UITableView, itemsForBeginning session: UIDragSession, at indexPath: IndexPath) -> [UIDragItem] {
-        let image = images[indexPath.row]
-        let itemProvider = NSItemProvider(object: image)
-        let dragItem = UIDragItem(itemProvider: itemProvider)
-        dragItem.localObject = image
-        return [dragItem]
+        return dragItems(forRow: indexPath.row)
     }
     
     func tableView(_ tableView: UITableView, itemsForAddingTo session: UIDragSession, at indexPath: IndexPath, point: CGPoint) -> [UIDragItem] {
-        let image = images[indexPath.row]
+        return dragItems(forRow: indexPath.row)
+    }
+    
+    private func dragItems(forRow row: Int) -> [UIDragItem] {
+        let image = images[row]
         let itemProvider = NSItemProvider(object: image)
         let dragItem = UIDragItem(itemProvider: itemProvider)
         dragItem.localObject = image
