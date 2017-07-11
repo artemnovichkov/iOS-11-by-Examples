@@ -35,6 +35,9 @@
 		066C1B5B1F07503C00A151F4 /* CoreNFC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066C1B571F074FBD00A151F4 /* CoreNFC.storyboard */; };
 		066C1B5C1F07504000A151F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 066C1B581F074FCD00A151F4 /* LaunchScreen.storyboard */; };
 		066C1B5D1F07505400A151F4 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0620960C1EF75A8C0019E369 /* UIViewController+Alert.swift */; };
+		067D6D291F14FE6500092051 /* DragAndDrop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 067D6D281F14FE6500092051 /* DragAndDrop.storyboard */; };
+		067D6D2B1F14FF0D00092051 /* DragAndDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D6D2A1F14FF0D00092051 /* DragAndDropViewController.swift */; };
+		067D6D2D1F14FF7E00092051 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D6D2C1F14FF7E00092051 /* ImagesViewController.swift */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
@@ -112,6 +115,9 @@
 		066C1B571F074FBD00A151F4 /* CoreNFC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreNFC.storyboard; sourceTree = "<group>"; };
 		066C1B581F074FCD00A151F4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		066C1B5E1F0750A500A151F4 /* CoreNFC-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "CoreNFC-Example.entitlements"; sourceTree = "<group>"; };
+		067D6D281F14FE6500092051 /* DragAndDrop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DragAndDrop.storyboard; sourceTree = "<group>"; };
+		067D6D2A1F14FF0D00092051 /* DragAndDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDropViewController.swift; sourceTree = "<group>"; };
+		067D6D2C1F14FF7E00092051 /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -249,6 +255,16 @@
 			path = "CoreNFC-Example";
 			sourceTree = "<group>";
 		};
+		067D6D271F14FE3700092051 /* Drag-n-Drop */ = {
+			isa = PBXGroup;
+			children = (
+				067D6D281F14FE6500092051 /* DragAndDrop.storyboard */,
+				067D6D2A1F14FF0D00092051 /* DragAndDropViewController.swift */,
+				067D6D2C1F14FF7E00092051 /* ImagesViewController.swift */,
+			);
+			path = "Drag-n-Drop";
+			sourceTree = "<group>";
+		};
 		06B51C6B1EF543DD00CA9279 = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +291,7 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-by-Examples */ = {
 			isa = PBXGroup;
 			children = (
+				067D6D271F14FE3700092051 /* Drag-n-Drop */,
 				0620960B1EF75A6D0019E369 /* Common */,
 				06F9D6421EF6B01500E0A4FB /* ARKit */,
 				06ED736B1EF65BFC0060456F /* CoreNFC */,
@@ -505,6 +522,7 @@
 				06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */,
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
+				067D6D291F14FE6500092051 /* DragAndDrop.storyboard in Resources */,
 				06B51C7F1EF543DD00CA9279 /* Assets.xcassets in Resources */,
 				0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */,
 				060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */,
@@ -563,7 +581,9 @@
 				063BA9A31F001F8500121A57 /* Fision+Extensions.swift in Sources */,
 				063BA9AB1F002D2D00121A57 /* Inceptionv3.mlmodel in Sources */,
 				06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */,
+				067D6D2D1F14FF7E00092051 /* ImagesViewController.swift in Sources */,
 				0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */,
+				067D6D2B1F14FF0D00092051 /* DragAndDropViewController.swift in Sources */,
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 				063BA9A91F0024DE00121A57 /* SwitchTableViewCell.swift in Sources */,
@@ -864,6 +884,7 @@
 				066C1B3C1F074D2D00A151F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		066C1B521F074F8300A151F4 /* Build configuration list for PBXNativeTarget "CoreNFC-Example" */ = {
 			isa = XCConfigurationList;
@@ -872,6 +893,7 @@
 				066C1B541F074F8300A151F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06B51C6F1EF543DD00CA9279 /* Build configuration list for PBXProject "iOS-11-by-Examples" */ = {
 			isa = XCConfigurationList;

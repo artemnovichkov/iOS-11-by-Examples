@@ -45,6 +45,9 @@ struct DataSource {
                                     Example(title: "🚀 ARKit",
                                             description: "Augmented reality experiences in your app or game",
                                             storyboardName: "ARKit"),
+                                    Example(title: "👆Drag And Drop",
+                                            description: "Easy way to move content",
+                                            storyboardName: "DragAndDrop"),
                                     Example(title: "✉️ IdentityLookup",
                                             description: "Filter unwanted SMS and MMS messages",
                                             storyboardName: "IdentityLookup")]
