@@ -15,7 +15,7 @@ class ObjectTrackingViewController: UIViewController {
     private lazy var captureSession: AVCaptureSession = {
         let session = AVCaptureSession()
         session.sessionPreset = AVCaptureSession.Preset.photo
-        guard let backCamera = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back),
+        guard let backCamera = AVCaptureDevice.default(for: .video),
             let input = try? AVCaptureDeviceInput(device: backCamera) else {
                 return session
         }
