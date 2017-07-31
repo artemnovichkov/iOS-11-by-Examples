@@ -72,6 +72,8 @@ Identifying devices that have already taken advantage of a promotional offer tha
 
 Attributed text for `SKLabelNode` and `SKTransformNode`.
 
+<img src="resources/sprite-kit-example.png" width="200">
+
 ### Blogs/Newsletter
 List of online sources which have mentioned iOS 11 by Examples: 
 
