@@ -50,22 +50,22 @@ class SKTextNode: SKLabelNode {
 class SpriteKitViewController: UIViewController {
 
     @IBOutlet weak var skView: SKView!
-    var timer: Timer!
-    var transformNodeHorizontal: SKTransformNode!
-    var transformNodeVertical: SKTransformNode!
+    var timer: Timer?
+    var horizontalTransformNode: SKTransformNode!
+    var verticalTransformNode: SKTransformNode!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        transformNodeHorizontal = SKTransformNode()
-        transformNodeHorizontal.position.y = -50
-        transformNodeHorizontal.addChild(SKTextNode())
-        skView.scene?.addChild(transformNodeHorizontal)
+        horizontalTransformNode = SKTransformNode()
+        horizontalTransformNode.position.y = -50
+        horizontalTransformNode.addChild(SKTextNode())
+        skView.scene?.addChild(horizontalTransformNode)
 
-        transformNodeVertical = SKTransformNode()
-        transformNodeVertical.addChild(SKTextNode())
-        skView.scene?.addChild(transformNodeVertical)
+        verticalTransformNode = SKTransformNode()
+        verticalTransformNode.addChild(SKTextNode())
+        skView.scene?.addChild(verticalTransformNode)
 
         timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { _ in
             self.updateNode()
@@ -73,7 +73,7 @@ class SpriteKitViewController: UIViewController {
     }
 
     func updateNode() {
-        transformNodeVertical.xRotation -= CGFloat.pi/100
-        transformNodeHorizontal.yRotation += CGFloat.pi/100
+        verticalTransformNode.xRotation -= CGFloat.pi/100
+        horizontalTransformNode.yRotation += CGFloat.pi/100
     }
 }
