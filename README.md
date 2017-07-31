@@ -68,6 +68,10 @@ Identifying devices that have already taken advantage of a promotional offer tha
 
 **Note**: select DeviceChecking scheme and run.
 
+### [SpriteKit](https://developer.apple.com/documentation/spritekit) by [mkowalski87](https://github.com/mkowalski87)
+
+Attributed text for `SKLabelNode` and `SKTransformNode`.
+
 ### Blogs/Newsletter
 List of online sources which have mentioned iOS 11 by Examples: 
 
