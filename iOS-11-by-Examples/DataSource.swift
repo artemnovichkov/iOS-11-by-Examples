@@ -50,5 +50,8 @@ struct DataSource {
                                             storyboardName: "DragAndDrop"),
                                     Example(title: "✉️ IdentityLookup",
                                             description: "Filter unwanted SMS and MMS messages",
-                                            storyboardName: "IdentityLookup")]
+                                            storyboardName: "IdentityLookup"),
+                                    Example(title: "🎮 SpriteKit",
+                                            description: "Attributed text for SKLabelNode and SKTransformNode",
+                                            storyboardName: "SpriteKit")]
 }

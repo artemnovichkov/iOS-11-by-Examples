@@ -55,6 +55,9 @@
 		06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */; };
 		06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6471EF6B07300E0A4FB /* art.scnassets */; };
 		06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */; };
+		B42AF6D21F2F3D7600795939 /* SpriteKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42AF6D11F2F3D7600795939 /* SpriteKit.storyboard */; };
+		B42AF6D41F2F3DB900795939 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B42AF6D31F2F3DB900795939 /* Scene.sks */; };
+		B42AF6D61F2F3DD100795939 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42AF6D51F2F3DD100795939 /* SpriteKitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,9 @@
 		06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 		06F9D6471EF6B07300E0A4FB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
+		B42AF6D11F2F3D7600795939 /* SpriteKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpriteKit.storyboard; sourceTree = "<group>"; };
+		B42AF6D31F2F3DB900795939 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
+		B42AF6D51F2F3DD100795939 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +309,7 @@
 				060519641EF63CC000EF8CC6 /* iOS-11-by-Examples.entitlements */,
 				06B51C911EF5593300CA9279 /* CoreML */,
 				06B51C8B1EF547B700CA9279 /* Vision */,
+				B42AF6CF1F2F3D4600795939 /* SpriteKit */,
 				06B51C771EF543DD00CA9279 /* AppDelegate.swift */,
 				06B51C791EF543DD00CA9279 /* ViewController.swift */,
 				06B51C891EF5454000CA9279 /* DataSource.swift */,
@@ -354,6 +361,16 @@
 				06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */,
 			);
 			path = ARKit;
+			sourceTree = "<group>";
+		};
+		B42AF6CF1F2F3D4600795939 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				B42AF6D11F2F3D7600795939 /* SpriteKit.storyboard */,
+				B42AF6D31F2F3DB900795939 /* Scene.sks */,
+				B42AF6D51F2F3DD100795939 /* SpriteKitViewController.swift */,
+			);
+			path = SpriteKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -527,9 +544,11 @@
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
 				067D6D291F14FE6500092051 /* DragAndDrop.storyboard in Resources */,
+				B42AF6D41F2F3DB900795939 /* Scene.sks in Resources */,
 				0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */,
 				060519671EF63CE500EF8CC6 /* IdentityLookup.storyboard in Resources */,
 				06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */,
+				B42AF6D21F2F3D7600795939 /* SpriteKit.storyboard in Resources */,
 				06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -584,6 +603,7 @@
 				06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */,
 				063BA9A31F001F8500121A57 /* Fision+Extensions.swift in Sources */,
 				063BA9AB1F002D2D00121A57 /* Inceptionv3.mlmodel in Sources */,
+				B42AF6D61F2F3DD100795939 /* SpriteKitViewController.swift in Sources */,
 				06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */,
 				067D6D2D1F14FF7E00092051 /* ImagesViewController.swift in Sources */,
 				0625FBC91EF974F400F0C2CE /* VisionViewController.swift in Sources */,
