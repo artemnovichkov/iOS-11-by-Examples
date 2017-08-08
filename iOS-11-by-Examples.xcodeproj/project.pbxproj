@@ -50,6 +50,8 @@
 		06B51C8F1EF547D400CA9279 /* FaceDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C8E1EF547D400CA9279 /* FaceDetectionViewController.swift */; };
 		06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C921EF5596F00CA9279 /* CoreML.storyboard */; };
 		06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C941EF5597900CA9279 /* CoreMLViewController.swift */; };
+		06EB81A71F39F6E200CD3371 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */; };
+		06EB81A91F39F6EA00CD3371 /* MapKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */; };
 		06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */; };
 		06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */; };
 		06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6431EF6B02100E0A4FB /* ARKit.storyboard */; };
@@ -137,6 +139,8 @@
 		06B51C901EF5492800CA9279 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		06B51C921EF5596F00CA9279 /* CoreML.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreML.storyboard; sourceTree = "<group>"; };
 		06B51C941EF5597900CA9279 /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
+		06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapKit.storyboard; sourceTree = "<group>"; };
 		06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreNFC.storyboard; sourceTree = "<group>"; };
 		06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNFCViewController.swift; sourceTree = "<group>"; };
 		06F9D6431EF6B02100E0A4FB /* ARKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARKit.storyboard; sourceTree = "<group>"; };
@@ -300,6 +304,7 @@
 		06B51C761EF543DD00CA9279 /* iOS-11-by-Examples */ = {
 			isa = PBXGroup;
 			children = (
+				06EB81A51F39F6BC00CD3371 /* MapKit */,
 				067D6D301F150FC500092051 /* Assets.xcassets */,
 				067D6D271F14FE3700092051 /* Drag-n-Drop */,
 				0620960B1EF75A6D0019E369 /* Common */,
@@ -341,6 +346,15 @@
 				069158E81F39F0C900B5F7E4 /* UIImage+CVPixelBuffer.swift */,
 			);
 			path = CoreML;
+			sourceTree = "<group>";
+		};
+		06EB81A51F39F6BC00CD3371 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */,
+				06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */,
+			);
+			path = MapKit;
 			sourceTree = "<group>";
 		};
 		06ED736B1EF65BFC0060456F /* CoreNFC */ = {
@@ -543,6 +557,7 @@
 				06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */,
 				06B51C821EF543DD00CA9279 /* LaunchScreen.storyboard in Resources */,
 				06B51C931EF5596F00CA9279 /* CoreML.storyboard in Resources */,
+				06EB81A91F39F6EA00CD3371 /* MapKit.storyboard in Resources */,
 				067D6D291F14FE6500092051 /* DragAndDrop.storyboard in Resources */,
 				B42AF6D41F2F3DB900795939 /* Scene.sks in Resources */,
 				0625FBC71EF974E800F0C2CE /* Vision.storyboard in Resources */,
@@ -595,6 +610,7 @@
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */,
+				06EB81A71F39F6E200CD3371 /* MapKitViewController.swift in Sources */,
 				067D6D2F1F15035C00092051 /* ImageTableViewCell.swift in Sources */,
 				063BA9A51F001FA000121A57 /* LandmarksService.swift in Sources */,
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
