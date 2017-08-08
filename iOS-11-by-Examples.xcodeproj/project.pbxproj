@@ -52,7 +52,7 @@
 		06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C941EF5597900CA9279 /* CoreMLViewController.swift */; };
 		06EB81A71F39F6E200CD3371 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */; };
 		06EB81A91F39F6EA00CD3371 /* MapKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */; };
-		06EB81AD1F3A015800CD3371 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB81AC1F3A015800CD3371 /* Annotation.swift */; };
+		06EB81AD1F3A015800CD3371 /* EmojiAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB81AC1F3A015800CD3371 /* EmojiAnnotation.swift */; };
 		06EB81AF1F3A018000CD3371 /* MarkerAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EB81AE1F3A018000CD3371 /* MarkerAnnotationView.swift */; };
 		06ED736D1EF65C0B0060456F /* CoreNFC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */; };
 		06ED73711EF65C2F0060456F /* CoreNFCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */; };
@@ -143,7 +143,7 @@
 		06B51C941EF5597900CA9279 /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
 		06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapKit.storyboard; sourceTree = "<group>"; };
-		06EB81AC1F3A015800CD3371 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
+		06EB81AC1F3A015800CD3371 /* EmojiAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiAnnotation.swift; sourceTree = "<group>"; };
 		06EB81AE1F3A018000CD3371 /* MarkerAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerAnnotationView.swift; sourceTree = "<group>"; };
 		06ED736C1EF65C0B0060456F /* CoreNFC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreNFC.storyboard; sourceTree = "<group>"; };
 		06ED73701EF65C2F0060456F /* CoreNFCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreNFCViewController.swift; sourceTree = "<group>"; };
@@ -357,7 +357,7 @@
 			children = (
 				06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */,
 				06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */,
-				06EB81AC1F3A015800CD3371 /* Annotation.swift */,
+				06EB81AC1F3A015800CD3371 /* EmojiAnnotation.swift */,
 				06EB81AE1F3A018000CD3371 /* MarkerAnnotationView.swift */,
 			);
 			path = MapKit;
@@ -614,7 +614,7 @@
 				06B51C8F1EF547D400CA9279 /* FaceDetectionViewController.swift in Sources */,
 				0625FBC41EF9697600F0C2CE /* ObjectTrackingViewController.swift in Sources */,
 				0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */,
-				06EB81AD1F3A015800CD3371 /* Annotation.swift in Sources */,
+				06EB81AD1F3A015800CD3371 /* EmojiAnnotation.swift in Sources */,
 				06B51C8A1EF5454000CA9279 /* DataSource.swift in Sources */,
 				0620960D1EF75A8C0019E369 /* UIViewController+Alert.swift in Sources */,
 				06EB81A71F39F6E200CD3371 /* MapKitViewController.swift in Sources */,

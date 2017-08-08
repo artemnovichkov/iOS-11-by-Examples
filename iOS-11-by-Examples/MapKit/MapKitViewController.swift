@@ -11,16 +11,16 @@ import MapKit
 
 class MapKitViewController: UIViewController {
     
-    let annotations: [Annotation] = {
-        let clown = Annotation(title: "🤡",
+    let annotations: [EmojiAnnotation] = {
+        let clown = EmojiAnnotation(title: "🤡",
                                color: .brown,
                                type: .good,
                                coordinate: CLLocationCoordinate2DMake(54.98, 73.30))
-        let developer = Annotation(title: "👨🏻‍💻",
+        let developer = EmojiAnnotation(title: "👨🏻‍💻",
                                color: .red,
                                type: .good,
                                coordinate: CLLocationCoordinate2DMake(54.98, 73.301))
-        let shit = Annotation(title: "💩",
+        let shit = EmojiAnnotation(title: "💩",
                               color: .gray,
                               type: .bad,
                               coordinate: CLLocationCoordinate2DMake(54.98, 73.305))
@@ -49,6 +49,9 @@ class MapKitViewController: UIViewController {
 extension MapKitViewController: MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotations memberAnnotations: [MKAnnotation]) -> MKClusterAnnotation {
-        return MKClusterAnnotation(memberAnnotations: memberAnnotations)
+        let test = MKClusterAnnotation(memberAnnotations: memberAnnotations)
+        test.title = "Emojis"
+        test.subtitle = nil
+        return test
     }
 }

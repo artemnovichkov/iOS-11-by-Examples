@@ -13,7 +13,7 @@ class MarkerAnnotationView: MKMarkerAnnotationView {
 
     override var annotation: MKAnnotation? {
         willSet {
-            guard let annotation = newValue as? Annotation else { return }
+            guard let annotation = newValue as? EmojiAnnotation else { return }
             clusteringIdentifier = annotation.type.rawValue
             markerTintColor = annotation.color
             glyphText = annotation.title

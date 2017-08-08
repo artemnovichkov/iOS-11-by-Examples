@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-final class Annotation: NSObject, MKAnnotation {
+final class EmojiAnnotation: NSObject, MKAnnotation {
     
     enum `Type`: String {
         case good, bad
