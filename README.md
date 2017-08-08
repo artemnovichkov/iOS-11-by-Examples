@@ -50,6 +50,12 @@ Easy way to move content.
 
 <img src="resources/drag-and-drop-example.gif" width="200">
 
+### [MapKit](https://developer.apple.com/documentation/mapkit)
+
+New map type, new anotation views and clustering!
+
+<img src="resources/mapkit-example.gif" width="200">
+
 ### [Core NFC](https://developer.apple.com/documentation/corenfc)
 
 Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site. Since Xcode 9 beta 2 Core NFC can now be enabled via the Capabilities tab in Xcode.
