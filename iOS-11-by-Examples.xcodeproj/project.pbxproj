@@ -41,6 +41,7 @@
 		067D6D2F1F15035C00092051 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D6D2E1F15035C00092051 /* ImageTableViewCell.swift */; };
 		067D6D311F15105E00092051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 067D6D301F150FC500092051 /* Assets.xcassets */; };
 		0681D0C61EF83C3300BFB6D5 /* PayloadTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */; };
+		069158E91F39F0CA00B5F7E4 /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069158E81F39F0C900B5F7E4 /* UIImage+CVPixelBuffer.swift */; };
 		06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C771EF543DD00CA9279 /* AppDelegate.swift */; };
 		06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51C791EF543DD00CA9279 /* ViewController.swift */; };
 		06B51C7D1EF543DD00CA9279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06B51C7B1EF543DD00CA9279 /* Main.storyboard */; };
@@ -54,7 +55,6 @@
 		06F9D6441EF6B02100E0A4FB /* ARKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6431EF6B02100E0A4FB /* ARKit.storyboard */; };
 		06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */; };
 		06F9D6481EF6B32900E0A4FB /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06F9D6471EF6B07300E0A4FB /* art.scnassets */; };
-		06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */; };
 		B42AF6D21F2F3D7600795939 /* SpriteKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42AF6D11F2F3D7600795939 /* SpriteKit.storyboard */; };
 		B42AF6D41F2F3DB900795939 /* Scene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B42AF6D31F2F3DB900795939 /* Scene.sks */; };
 		B42AF6D61F2F3DD100795939 /* SpriteKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42AF6D51F2F3DD100795939 /* SpriteKitViewController.swift */; };
@@ -125,6 +125,7 @@
 		067D6D2E1F15035C00092051 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		067D6D301F150FC500092051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0681D0C51EF83C3300BFB6D5 /* PayloadTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTableViewCell.swift; sourceTree = "<group>"; };
+		069158E81F39F0C900B5F7E4 /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		06B51C741EF543DD00CA9279 /* iOS-11-by-Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-11-by-Examples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06B51C771EF543DD00CA9279 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06B51C791EF543DD00CA9279 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,7 +142,6 @@
 		06F9D6431EF6B02100E0A4FB /* ARKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ARKit.storyboard; sourceTree = "<group>"; };
 		06F9D6451EF6B02A00E0A4FB /* ARKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitViewController.swift; sourceTree = "<group>"; };
 		06F9D6471EF6B07300E0A4FB /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Processing.swift"; sourceTree = "<group>"; };
 		B42AF6D11F2F3D7600795939 /* SpriteKit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpriteKit.storyboard; sourceTree = "<group>"; };
 		B42AF6D31F2F3DB900795939 /* Scene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Scene.sks; sourceTree = "<group>"; };
 		B42AF6D51F2F3DD100795939 /* SpriteKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitViewController.swift; sourceTree = "<group>"; };
@@ -338,7 +338,7 @@
 				063BA9AA1F002D2D00121A57 /* Inceptionv3.mlmodel */,
 				06B51C921EF5596F00CA9279 /* CoreML.storyboard */,
 				06B51C941EF5597900CA9279 /* CoreMLViewController.swift */,
-				06F9D6491EF6C5F900E0A4FB /* UIImage+Processing.swift */,
+				069158E81F39F0C900B5F7E4 /* UIImage+CVPixelBuffer.swift */,
 			);
 			path = CoreML;
 			sourceTree = "<group>";
@@ -600,7 +600,6 @@
 				06B51C7A1EF543DD00CA9279 /* ViewController.swift in Sources */,
 				06B51C781EF543DD00CA9279 /* AppDelegate.swift in Sources */,
 				06F9D6461EF6B02A00E0A4FB /* ARKitViewController.swift in Sources */,
-				06F9D64A1EF6C5F900E0A4FB /* UIImage+Processing.swift in Sources */,
 				063BA9A31F001F8500121A57 /* Fision+Extensions.swift in Sources */,
 				063BA9AB1F002D2D00121A57 /* Inceptionv3.mlmodel in Sources */,
 				B42AF6D61F2F3DD100795939 /* SpriteKitViewController.swift in Sources */,
@@ -611,6 +610,7 @@
 				060519691EF63CF000EF8CC6 /* IdentityLookupViewController.swift in Sources */,
 				06B51C951EF5597900CA9279 /* CoreMLViewController.swift in Sources */,
 				063BA9A91F0024DE00121A57 /* SwitchTableViewCell.swift in Sources */,
+				069158E91F39F0CA00B5F7E4 /* UIImage+CVPixelBuffer.swift in Sources */,
 				0620960F1EF75BCE0019E369 /* UserDefaults+Storage.swift in Sources */,
 				066391621EFE2581009AA024 /* LandmarksViewController.swift in Sources */,
 			);

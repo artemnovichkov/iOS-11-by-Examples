@@ -21,7 +21,7 @@ class CoreMLViewController: UIViewController {
     func process(_ image: UIImage) {
         imageView.image = image
         
-        guard let pixelBuffer = image.pixelBuffer else {
+        guard let pixelBuffer = image.pixelBuffer(width: 299, height: 299) else {
             return
         }
         //I have `Use of unresolved identifier 'Inceptionv3'` error here when I use New Build System (File > Project Settings)   ¯\_(ツ)_/¯
