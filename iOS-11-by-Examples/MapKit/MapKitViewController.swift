@@ -10,21 +10,28 @@ import UIKit
 import MapKit
 
 class MapKitViewController: UIViewController {
-
+    
+    let annotations: [Annotation] = {
+        let brown = Annotation(title: "🤡",
+                               color: .brown,
+                               coordinate: CLLocationCoordinate2DMake(55.7, 37.6))
+        let gray = Annotation(title: "💩",
+                              color: .gray,
+                              coordinate: CLLocationCoordinate2DMake(55.7, 37.7))
+        return [brown, gray]
+    }()
+    
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //New map type
-        mapView.mapType = .mutedStandard
+        //        mapView.mapType = .mutedStandard
         mapView.delegate = self
         mapView.register(MarkerAnnotationView.self,
                          forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
-        let test1 = Annotation(coordinate: CLLocationCoordinate2DMake(55.7, 37.6))
-        let test2 = Annotation(coordinate: CLLocationCoordinate2DMake(55.7, 37.7))
-        mapView.addAnnotation(test1)
-        mapView.addAnnotation(test2)
+        mapView.addAnnotations(annotations)
     }
 }
 

@@ -355,9 +355,9 @@
 		06EB81A51F39F6BC00CD3371 /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */,
 				06EB81A61F39F6E200CD3371 /* MapKitViewController.swift */,
 				06EB81AC1F3A015800CD3371 /* Annotation.swift */,
-				06EB81A81F39F6EA00CD3371 /* MapKit.storyboard */,
 				06EB81AE1F3A018000CD3371 /* MarkerAnnotationView.swift */,
 			);
 			path = MapKit;
