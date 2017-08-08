@@ -12,13 +12,19 @@ import MapKit
 class MapKitViewController: UIViewController {
     
     let annotations: [Annotation] = {
-        let brown = Annotation(title: "🤡",
+        let clown = Annotation(title: "🤡",
                                color: .brown,
+                               type: .good,
                                coordinate: CLLocationCoordinate2DMake(55.7, 37.6))
-        let gray = Annotation(title: "💩",
+        let developer = Annotation(title: "👨🏻‍💻",
+                               color: .red,
+                               type: .good,
+                               coordinate: CLLocationCoordinate2DMake(55.7, 37.62))
+        let shit = Annotation(title: "💩",
                               color: .gray,
+                              type: .bad,
                               coordinate: CLLocationCoordinate2DMake(55.7, 37.7))
-        return [brown, gray]
+        return [clown, developer, shit]
     }()
     
     @IBOutlet weak var mapView: MKMapView!
@@ -26,7 +32,7 @@ class MapKitViewController: UIViewController {
         super.viewDidLoad()
         
         //New map type
-        //        mapView.mapType = .mutedStandard
+        mapView.mapType = .mutedStandard
         mapView.delegate = self
         mapView.register(MarkerAnnotationView.self,
                          forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)

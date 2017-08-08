@@ -14,7 +14,7 @@ class MarkerAnnotationView: MKMarkerAnnotationView {
     override var annotation: MKAnnotation? {
         willSet {
             guard let annotation = newValue as? Annotation else { return }
-            clusteringIdentifier = "\(Annotation.self)"
+            clusteringIdentifier = annotation.type.rawValue
             markerTintColor = annotation.color
             glyphText = annotation.title
         }
