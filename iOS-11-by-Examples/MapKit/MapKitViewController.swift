@@ -15,23 +15,22 @@ class MapKitViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //New map type
+        mapView.mapType = .mutedStandard
+        mapView.delegate = self
+        mapView.register(MarkerAnnotationView.self,
+                         forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
+        let test1 = Annotation(coordinate: CLLocationCoordinate2DMake(55.7, 37.6))
+        let test2 = Annotation(coordinate: CLLocationCoordinate2DMake(55.7, 37.7))
+        mapView.addAnnotation(test1)
+        mapView.addAnnotation(test2)
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+extension MapKitViewController: MKMapViewDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotations memberAnnotations: [MKAnnotation]) -> MKClusterAnnotation {
+        return MKClusterAnnotation(memberAnnotations: memberAnnotations)
     }
-    */
-
 }
