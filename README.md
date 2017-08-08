@@ -1,5 +1,5 @@
 # iOS 11 by Examples
-![Xcode 9 beta 4](https://img.shields.io/badge/Xcode-9%20beta%204-0080FF.svg) ![Swift 4](https://img.shields.io/badge/Swift-4-yellow.svg) ![iOS 11 beta 4](https://img.shields.io/badge/iOS-11%20beta%204-green.svg)
+![Xcode 9 beta 5](https://img.shields.io/badge/Xcode-9%20beta%205-0080FF.svg) ![Swift 4](https://img.shields.io/badge/Swift-4-yellow.svg) ![iOS 11 beta 5](https://img.shields.io/badge/iOS-11%20beta%205-green.svg)
 
 Code examples for new APIs of iOS 11.
 
@@ -19,6 +19,8 @@ Code examples for new APIs of iOS 11.
 ### [Core ML](https://developer.apple.com/documentation/coreml)
 
 Image classification demo using Core ML framework. Show description of an object on selected photo.
+
+Thanks [@hollance](https://github.com/hollance) for his useful [CoreMLHelpers](https://github.com/hollance/CoreMLHelpers).
 
 <img src="resources/coreml-example.jpeg" width="200">
 
