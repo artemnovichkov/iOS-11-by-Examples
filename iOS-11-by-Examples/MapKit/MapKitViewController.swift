@@ -15,21 +15,26 @@ class MapKitViewController: UIViewController {
         let clown = Annotation(title: "🤡",
                                color: .brown,
                                type: .good,
-                               coordinate: CLLocationCoordinate2DMake(55.7, 37.6))
+                               coordinate: CLLocationCoordinate2DMake(54.98, 73.30))
         let developer = Annotation(title: "👨🏻‍💻",
                                color: .red,
                                type: .good,
-                               coordinate: CLLocationCoordinate2DMake(55.7, 37.62))
+                               coordinate: CLLocationCoordinate2DMake(54.98, 73.301))
         let shit = Annotation(title: "💩",
                               color: .gray,
                               type: .bad,
-                              coordinate: CLLocationCoordinate2DMake(55.7, 37.7))
+                              coordinate: CLLocationCoordinate2DMake(54.98, 73.305))
         return [clown, developer, shit]
     }()
     
     @IBOutlet weak var mapView: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let coordinate = CLLocationCoordinate2DMake(54.98, 73.32)
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(coordinate, 5000, 5000)
+        mapView.setRegion(coordinateRegion, animated: true)
         
         //New map type
         mapView.mapType = .mutedStandard
