@@ -70,6 +70,7 @@ class FaceDetectionViewController: UIViewController {
         let imagePickerController = UIImagePickerController()
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             imagePickerController.sourceType = .camera
+            imagePickerController.cameraDevice = .front
         }
         imagePickerController.delegate = self
         imagePickerController.allowsEditing = true
