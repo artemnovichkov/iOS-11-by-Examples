@@ -61,19 +61,19 @@ final class LandmarksService {
     private func convert(landmarks: VNFaceLandmarks2D) -> [Landmark] {
         var finalLandmarks = [Landmark]()
         if let faceContour = landmarks.faceContour {
-            finalLandmarks.append(Landmark(type: .faceContour, points: faceContour.points))
+            finalLandmarks.append(Landmark(type: .faceContour, points: faceContour.normalizedPoints))
         }
         if let leftEye = landmarks.leftEye {
-            finalLandmarks.append(Landmark(type: .leftEye, points: leftEye.points))
+            finalLandmarks.append(Landmark(type: .leftEye, points: leftEye.normalizedPoints))
         }
         if let rightEye = landmarks.rightEye {
-            finalLandmarks.append(Landmark(type: .rightEye, points: rightEye.points))
+            finalLandmarks.append(Landmark(type: .rightEye, points: rightEye.normalizedPoints))
         }
         if let nose = landmarks.nose {
-            finalLandmarks.append(Landmark(type: .nose, points: nose.points))
+            finalLandmarks.append(Landmark(type: .nose, points: nose.normalizedPoints))
         }
         if let outerLips = landmarks.outerLips {
-            finalLandmarks.append(Landmark(type: .outerLips, points: outerLips.points))
+            finalLandmarks.append(Landmark(type: .outerLips, points: outerLips.normalizedPoints))
         }
         return finalLandmarks
     }
