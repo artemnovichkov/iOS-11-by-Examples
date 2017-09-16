@@ -3,6 +3,8 @@
 ![Swift 4](https://img.shields.io/badge/Swift-4-yellow.svg) 
 ![iOS 11 GM seed](https://img.shields.io/badge/iOS-11%20GM%20seed-green.svg)
 
+<img src="resources/main.png" width="300">
+
 Code examples for new APIs of iOS 11.
 
 **Note**: The project requires Xcode 9 Beta 1 or later, Swift 4 and iOS 11.
