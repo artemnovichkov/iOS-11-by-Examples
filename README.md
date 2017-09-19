@@ -2,6 +2,8 @@
 ![Xcode 9 GM seed](https://img.shields.io/badge/Xcode-9%20GM%20seed-0080FF.svg) 
 ![Swift 4](https://img.shields.io/badge/Swift-4-yellow.svg) 
 ![iOS 11 GM seed](https://img.shields.io/badge/iOS-11%20GM%20seed-green.svg)
+<a href="https://dashboard.buddybuild.com/apps/59c150fb5793d10001a6d13e/build/latest?branch=master">
+        <img src="https://dashboard.buddybuild.com/api/statusImage?appID=59c150fb5793d10001a6d13e&branch=master&build=latest" />
 
 <img src="resources/main.png" width="300">
 
