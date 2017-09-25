@@ -1,14 +1,14 @@
 # iOS 11 by Examples
-![Xcode 9 GM seed](https://img.shields.io/badge/Xcode-9%20GM%20seed-0080FF.svg) 
+![Xcode 9 GM seed](https://img.shields.io/badge/Xcode-9%20-0080FF.svg) 
 ![Swift 4](https://img.shields.io/badge/Swift-4-yellow.svg) 
-![iOS 11 GM seed](https://img.shields.io/badge/iOS-11%20GM%20seed-green.svg)
-[![Build Status](https://dashboard.buddybuild.com/api/statusImage?appID=59c150fb5793d10001a6d13e&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59c150fb5793d10001a6d13e/build/latest?branch=master)
+![iOS 11 GM seed](https://img.shields.io/badge/iOS-11%20-green.svg)
+[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59c150fb5793d10001a6d13e&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59c150fb5793d10001a6d13e/build/latest?branch=master)
 
 <img src="resources/main.png" width="300">
 
 Code examples for new APIs of iOS 11.
 
-**Note**: The project requires Xcode 9 Beta 1 or later, Swift 4 and iOS 11.
+**Note**: The project requires Xcode 9, Swift 4 and iOS 11.
 
 ## Table of contents
 
@@ -59,7 +59,7 @@ Easy way to move content.
 
 ### [Core NFC](https://developer.apple.com/documentation/corenfc)
 
-Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site. Since Xcode 9 beta 2 Core NFC can now be enabled via the Capabilities tab in Xcode.
+Reading of NFC tag payloads. Don't forget to enable NFC Tag Reading for App ID in the Apple Developer site.
 
 **Note**: select CoreNFC-Example scheme and run.
 
