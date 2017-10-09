@@ -101,6 +101,7 @@ List of online sources which have mentioned iOS 11 by Examples:
 - [iOS Dev Weekly - issue #307](https://iosdevweekly.com/issues/307?#code)
 - [WeeklyCocoa.News - 31st week of 2017](https://weeklycocoa.news/2017/week-31st-of-2017/)
 - [Natasha's This Week in Swift - issue #143](https://swiftnews.curated.co/issues/143#libraries)
+- [#iOSCocoaTreats - Oct 5 2017](https://ioscocoatreats.ongoodbits.com/2017/09/14/get-your-apps-ready-for-iphone-x#education)
 
 ## Author
 
