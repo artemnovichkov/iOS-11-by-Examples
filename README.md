@@ -107,6 +107,8 @@ List of online sources which have mentioned iOS 11 by Examples:
 
 Artem Novichkov, novichkoff93@gmail.com
 
+[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/artemnovichkov?utm_source=github&utm_medium=button&utm_term=artemnovichkov&utm_campaign=github)
+
 ## License
 
 iOS 11 by Examples is available under the MIT license. See the LICENSE file for more info.
