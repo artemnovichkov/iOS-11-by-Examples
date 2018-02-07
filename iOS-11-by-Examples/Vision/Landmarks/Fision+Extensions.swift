@@ -34,9 +34,6 @@ extension VNFaceLandmarks2D {
 extension VNFaceLandmarkRegion2D {
     
     var points: [CGPoint] {
-        return (0..<pointCount).map { index in
-            let point = self.point(at: index)
-            return CGPoint(x: CGFloat(point.x), y: CGFloat(point.y))
-        }
+        return normalizedPoints
     }
 }

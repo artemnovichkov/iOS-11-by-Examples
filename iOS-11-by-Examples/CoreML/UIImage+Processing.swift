@@ -53,19 +53,31 @@ extension UIImage {
         let width = cgImage.width
         let height = cgImage.height
         
-        var pxbuffer: CVPixelBuffer?
-        var status = CVPixelBufferCreate(kCFAllocatorDefault,
+        var initializingBuffer: CVPixelBuffer?
+        CVPixelBufferCreate(kCFAllocatorDefault,
                                          width,
                                          height,
                                          kCVPixelFormatType_32BGRA,
                                          options,
-                                         &pxbuffer)
-        status = CVPixelBufferLockBaseAddress(pxbuffer!, CVPixelBufferLockFlags(rawValue: 0))
+                                         &initializingBuffer)
         
-        let bufferAddress = CVPixelBufferGetBaseAddress(pxbuffer!)
+        guard let pixelBuffer = initializingBuffer else {
+            print("Encountered error during CVPixelBufferCreate")
+            return nil
+        }
+        
+        var status = CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        
+        guard status == kCVReturnSuccess else {
+            print("Pixel buffer: \(pixelBuffer)")
+            print("CVPixelBufferLockBaseAddress status \(status)")
+            return nil
+        }
+        
+        let bufferAddress = CVPixelBufferGetBaseAddress(pixelBuffer)
         
         let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
-        let bytesperrow = CVPixelBufferGetBytesPerRow(pxbuffer!)
+        let bytesperrow = CVPixelBufferGetBytesPerRow(pixelBuffer)
         let context = CGContext(data: bufferAddress,
                                 width: width,
                                 height: height,
@@ -77,7 +89,14 @@ extension UIImage {
         context?.concatenate(__CGAffineTransformMake( 1, 0, 0, -1, 0, CGFloat(height) )) //Flip Vertical
         
         context?.draw(cgImage, in: CGRect(origin: .zero, size: CGSize(width: width, height: width)))
-        status = CVPixelBufferUnlockBaseAddress(pxbuffer!, CVPixelBufferLockFlags(rawValue: 0))
-        return pxbuffer
+        status = CVPixelBufferUnlockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        
+        guard status == kCVReturnSuccess else {
+            print("Pixel buffer: \(pixelBuffer)")
+            print("CVPixelBufferUnlockBaseAddress status \(status)")
+            return nil
+        }
+        
+        return pixelBuffer
     }
 }
