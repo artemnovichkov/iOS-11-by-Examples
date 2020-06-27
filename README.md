@@ -108,7 +108,7 @@ List of online sources which have mentioned iOS 11 by Examples:
 
 Artem Novichkov, novichkoff93@gmail.com
 
-[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/artemnovichkov?utm_source=github&utm_medium=button&utm_term=artemnovichkov&utm_campaign=github)
+[![Contact me on Codementor](https://www.codementor.io/m-badges/artemnovichkov/im-a-cm-b.svg)](https://www.codementor.io/@artemnovichkov?refer=badge)
 
 ## License
 
