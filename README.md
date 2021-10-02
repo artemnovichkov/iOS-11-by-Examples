@@ -106,9 +106,7 @@ List of online sources which have mentioned iOS 11 by Examples:
 
 ## Author
 
-Artem Novichkov, novichkoff93@gmail.com
-
-[![Contact me on Codementor](https://www.codementor.io/m-badges/artemnovichkov/im-a-cm-b.svg)](https://www.codementor.io/@artemnovichkov?refer=badge)
+Artem Novichkov, https://www.artemnovichkov.com/about
 
 ## License
 
